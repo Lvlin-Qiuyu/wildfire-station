@@ -36,6 +36,12 @@ const tools = [
     desc: '生成二维码图片，上传图片解码识别内容',
     path: '/tools/qrcode',
   },
+  {
+    icon: '📋',
+    name: '文本比对',
+    desc: '对比两段文本差异，类似代码 Diff 效果',
+    path: '/tools/text-diff',
+  },
 ]
 </script>
 
