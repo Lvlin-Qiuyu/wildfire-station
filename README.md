@@ -11,6 +11,7 @@
 | [Base64 编解码](https://lvlin-qiuyu.github.io/wildfire-station/tools/base64) | 实时 Base64 编码与解码，支持一键复制 |
 | [二维码工具](https://lvlin-qiuyu.github.io/wildfire-station/tools/qrcode) | 文本生成二维码（可下载）、上传图片解码 |
 | [文本比对](https://lvlin-qiuyu.github.io/wildfire-station/tools/text-diff) | 对比两段文本差异，类似代码 Diff 效果 |
+| [外部收藏](https://lvlin-qiuyu.github.io/wildfire-station/tools/bookmarks) | 好用的工具、资讯站点、Skill 等资源归档 |
 
 ## 📦 技术栈
 
@@ -41,7 +42,8 @@ wildfire-station/
 │   └── tools/
 │       ├── base64.vue         # Base64 编解码
 │       ├── qrcode.vue         # 二维码工具
-│       └── text-diff.vue      # 文本比对
+│       ├── text-diff.vue      # 文本比对
+│       └── bookmarks.vue      # 外部收藏
 ├── layouts/
 │   └── default.vue            # 默认布局
 ├── docs/
