@@ -10,6 +10,7 @@
 |------|------|
 | [Base64 编解码](https://lvlin-qiuyu.github.io/wildfire-station/tools/base64) | 实时 Base64 编码与解码，支持一键复制 |
 | [二维码工具](https://lvlin-qiuyu.github.io/wildfire-station/tools/qrcode) | 文本生成二维码（可下载）、上传图片解码 |
+| [文本比对](https://lvlin-qiuyu.github.io/wildfire-station/tools/text-diff) | 对比两段文本差异，类似代码 Diff 效果 |
 
 ## 📦 技术栈
 
@@ -39,7 +40,8 @@ wildfire-station/
 │   ├── index.vue              # 首页（工具卡片导航）
 │   └── tools/
 │       ├── base64.vue         # Base64 编解码
-│       └── qrcode.vue         # 二维码工具
+│       ├── qrcode.vue         # 二维码工具
+│       └── text-diff.vue      # 文本比对
 ├── layouts/
 │   └── default.vue            # 默认布局
 ├── docs/
