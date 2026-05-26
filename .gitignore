@@ -127,6 +127,8 @@ dist
 
 # pnpm
 .pnpm-store
+node-compile-cache/
+pnpm-config.json
 
 # yarn v3
 .pnp.*
