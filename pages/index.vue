@@ -42,6 +42,12 @@ const tools = [
     desc: '对比两段文本差异，类似代码 Diff 效果',
     path: '/tools/text-diff',
   },
+  {
+    icon: '🔗',
+    name: '外部收藏',
+    desc: '好用的工具、资讯站点、Skill 等资源归档',
+    path: '/tools/bookmarks',
+  },
 ]
 </script>
 
