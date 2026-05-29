@@ -27,7 +27,12 @@ wildfire-station/
 │   ├── index.vue                  # 首页（工具卡片导航）
 │   └── tools/
 │       ├── base64.vue             # Base64 编解码工具
-│       └── qrcode.vue             # 二维码生成与解码工具
+│       ├── qrcode.vue             # 二维码生成与解码工具
+│       ├── text-diff.vue          # 文本比对工具
+│       ├── bookmarks.vue          # 外部收藏页面
+│       ├── radix.vue              # 进制转换器
+│       ├── css-gradient.vue       # CSS 渐变生成器
+│       └── cron.vue               # Cron 表达式可视化
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -42,6 +47,11 @@ wildfire-station/
 |------|------|------|
 | Base64 编解码 | `/tools/base64` | 实时编码/解码、模式切换、一键复制 |
 | 二维码工具 | `/tools/qrcode` | 文本生成二维码（可下载）、上传图片解码 |
+| 文本比对 | `/tools/text-diff` | 对比两段文本差异，类似代码 Diff 效果 |
+| 外部收藏 | `/tools/bookmarks` | 好用的工具、资讯站点、Skill 等资源归档 |
+| 进制转换器 | `/tools/radix` | 二/八/十/十六进制和 Base64 互转，自动识别前缀 |
+| CSS 渐变生成器 | `/tools/css-gradient` | 线性/径向/锥形渐变，实时预览，一键复制代码 |
+| Cron 表达式可视化 | `/tools/cron` | 解析表达式、人类可读描述、字段拆解、执行时间预览 |
 
 ## GitHub Actions 部署
 
