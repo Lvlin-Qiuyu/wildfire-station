@@ -37,16 +37,22 @@ const tools = [
     path: '/tools/qrcode',
   },
   {
-    icon: '📋',
-    name: '文本比对',
-    desc: '对比两段文本差异，类似代码 Diff 效果',
-    path: '/tools/text-diff',
+    icon: '🔢',
+    name: '进制转换器',
+    desc: '支持二/八/十/十六进制和 Base64 互转，自动识别前缀',
+    path: '/tools/radix',
   },
   {
-    icon: '🔗',
-    name: '外部收藏',
-    desc: '好用的工具、资讯站点、Skill 等资源归档',
-    path: '/tools/bookmarks',
+    icon: '🎨',
+    name: 'CSS 渐变生成器',
+    desc: '可视化创建线性/径向/锥形渐变，实时预览，一键复制代码',
+    path: '/tools/css-gradient',
+  },
+  {
+    icon: '⏰',
+    name: 'Cron 表达式可视化',
+    desc: '解析 Cron 表达式，人类可读描述，预览接下来执行时间',
+    path: '/tools/cron',
   },
 ]
 </script>
