@@ -213,12 +213,12 @@ h2 {
 }
 
 .btn-sm:hover {
-  border-color: #ff8c42;
-  color: #ff6b35;
+  border-color: #10b981;
+  color: #22c55e;
 }
 
 .btn-sm.btn-primary {
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  background: linear-gradient(135deg, #22c55e, #10b981);
   color: white;
   border: none;
 }
@@ -285,7 +285,7 @@ h2 {
 }
 
 .checkbox-label input[type="checkbox"] {
-  accent-color: #ff8c42;
+  accent-color: #10b981;
 }
 
 .stats {
@@ -297,7 +297,7 @@ h2 {
 .back-link {
   display: inline-block;
   margin-top: 2rem;
-  color: #ff6b35;
+  color: #22c55e;
   font-weight: 500;
 }
 
