@@ -100,7 +100,7 @@ h2 {
 }
 
 .mode-switch button.active {
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  background: linear-gradient(135deg, #22c55e, #10b981);
   color: white;
   font-weight: 600;
 }
@@ -138,7 +138,7 @@ textarea {
 
 textarea:focus {
   outline: none;
-  border-color: #ff8c42;
+  border-color: #10b981;
 }
 
 textarea[readonly] {
@@ -149,7 +149,7 @@ textarea[readonly] {
 .btn-copy {
   align-self: flex-end;
   padding: 0.5rem 1.2rem;
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  background: linear-gradient(135deg, #22c55e, #10b981);
   color: white;
   border: none;
   border-radius: 6px;
@@ -165,7 +165,7 @@ textarea[readonly] {
 .back-link {
   display: inline-block;
   margin-top: 2.5rem;
-  color: #ff6b35;
+  color: #22c55e;
   font-weight: 500;
 }
 
