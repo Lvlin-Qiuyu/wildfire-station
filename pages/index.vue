@@ -60,7 +60,12 @@ const tools = [
     desc: '解析 Cron 表达式，人类可读描述，预览接下来执行时间',
     path: '/tools/cron',
   },
-
+  {
+    icon: '🔗',
+    name: '外部收藏',
+    desc: '好用的工具、资讯站点、Skill 等资源归档',
+    path: '/tools/bookmarks',
+  },
   {
     icon: '📏',
     name: '屏幕尺寸对比',
