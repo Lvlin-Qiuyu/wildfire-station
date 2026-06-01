@@ -310,7 +310,7 @@ h2 {
 
 .cron-input:focus {
   outline: none;
-  border-color: #ff8c42;
+  border-color: #10b981;
 }
 
 .presets {
@@ -333,8 +333,8 @@ h2 {
 
 .preset-btn:hover {
   background: #fff3ed;
-  border-color: #ff8c42;
-  color: #ff6b35;
+  border-color: #10b981;
+  color: #22c55e;
 }
 
 .error-msg {
@@ -362,7 +362,7 @@ h2 {
 .description-box h3 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  color: #ff6b35;
+  color: #22c55e;
 }
 
 .description {
@@ -436,7 +436,7 @@ h2 {
 
 .run-index {
   font-size: 0.8rem;
-  color: #ff6b35;
+  color: #22c55e;
   font-weight: 700;
   min-width: 24px;
 }
@@ -450,7 +450,7 @@ h2 {
 .back-link {
   display: inline-block;
   margin-top: 2.5rem;
-  color: #ff6b35;
+  color: #22c55e;
   font-weight: 500;
 }
 
