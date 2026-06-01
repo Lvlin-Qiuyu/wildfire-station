@@ -66,6 +66,24 @@ const tools = [
     desc: '好用的工具、资讯站点、Skill 等资源归档',
     path: '/tools/bookmarks',
   },
+  {
+    icon: '📏',
+    name: '屏幕尺寸对比',
+    desc: '输入多个设备尺寸，按真实比例绘制对比图，一目了然',
+    path: '/tools/screen-size',
+  },
+  {
+    icon: '📖',
+    name: '中文文本排版',
+    desc: '一键修正标点、中英文间距、段首缩进，让排版整齐美观',
+    path: '/tools/text-formatter',
+  },
+  {
+    icon: '🎓',
+    name: '番茄钟计时器',
+    desc: '25分钟专注 + 5分钟休息，圆形进度条，本地存储记录',
+    path: '/tools/pomodoro',
+  },
 ]
 </script>
 
