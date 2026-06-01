@@ -51,7 +51,7 @@ useHead({ title: '屏幕尺寸对比 - 野火小站' })
 const unit = ref('inch')
 const canvasEl = ref(null)
 
-const colors = ['#ff6b35', '#3498db', '#2ecc71', '#9b59b6', '#e74c3c', '#f39c12', '#1abc9c', '#e67e22']
+const colors = ['#22c55e', '#3498db', '#2ecc71', '#9b59b6', '#e74c3c', '#f39c12', '#1abc9c', '#e67e22']
 
 const devices = ref([])
 
@@ -282,7 +282,7 @@ h2 {
 
 .input:focus {
   outline: none;
-  border-color: #ff8c42;
+  border-color: #10b981;
 }
 
 .unit-toggle {
@@ -302,14 +302,14 @@ h2 {
 }
 
 .unit-toggle button.active {
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  background: linear-gradient(135deg, #22c55e, #10b981);
   color: white;
   font-weight: 600;
 }
 
 .btn-add {
   padding: 0.5rem 1.2rem;
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  background: linear-gradient(135deg, #22c55e, #10b981);
   color: white;
   border: none;
   border-radius: 8px;
@@ -347,8 +347,8 @@ h2 {
 }
 
 .btn-preset:hover {
-  border-color: #ff8c42;
-  color: #ff6b35;
+  border-color: #10b981;
+  color: #22c55e;
 }
 
 .canvas-area {
@@ -447,7 +447,7 @@ canvas {
 .back-link {
   display: inline-block;
   margin-top: 2rem;
-  color: #ff6b35;
+  color: #22c55e;
   font-weight: 500;
 }
 
