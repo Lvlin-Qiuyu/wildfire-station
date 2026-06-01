@@ -13,7 +13,7 @@
           <circle
             cx="100" cy="100" r="88"
             fill="none"
-            :stroke="isBreak ? '#2ecc71' : '#ff6b35'"
+            :stroke="isBreak ? '#2ecc71' : '#22c55e'"
             stroke-width="8"
             stroke-linecap="round"
             :stroke-dasharray="circumference"
@@ -325,7 +325,7 @@ h2 {
 }
 
 .btn-start {
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  background: linear-gradient(135deg, #22c55e, #10b981);
   color: white;
 }
 
@@ -425,8 +425,8 @@ h2 {
 }
 
 .stepper button:hover {
-  border-color: #ff8c42;
-  color: #ff6b35;
+  border-color: #10b981;
+  color: #22c55e;
 }
 
 .stepper span {
@@ -454,7 +454,7 @@ h2 {
 .stat-value {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #ff6b35;
+  color: #22c55e;
 }
 
 .stat-label {
@@ -502,7 +502,7 @@ h2 {
 .back-link {
   display: inline-block;
   margin-top: 2rem;
-  color: #ff6b35;
+  color: #22c55e;
   font-weight: 500;
 }
 
