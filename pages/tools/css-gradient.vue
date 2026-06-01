@@ -67,8 +67,8 @@ const gradientType = ref('linear')
 const angle = ref(135)
 
 const stops = reactive([
-  { color: '#ff6b35', position: 0 },
-  { color: '#ff8c42', position: 50 },
+  { color: '#22c55e', position: 0 },
+  { color: '#10b981', position: 50 },
   { color: '#ffd166', position: 100 },
 ])
 
@@ -161,7 +161,7 @@ h2 {
 }
 
 .gradient-type-switch button.active {
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  background: linear-gradient(135deg, #22c55e, #10b981);
   color: white;
   font-weight: 600;
 }
@@ -203,12 +203,12 @@ h2 {
 
 .control-row input[type="range"] {
   flex: 1;
-  accent-color: #ff6b35;
+  accent-color: #22c55e;
 }
 
 .angle-value {
   font-family: 'Courier New', monospace;
-  color: #ff6b35;
+  color: #22c55e;
   font-weight: 600;
   min-width: 40px;
   text-align: right;
@@ -318,7 +318,7 @@ h2 {
 
 .btn-copy {
   padding: 0.5rem 1.2rem;
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  background: linear-gradient(135deg, #22c55e, #10b981);
   color: white;
   border: none;
   border-radius: 6px;
@@ -334,7 +334,7 @@ h2 {
 .back-link {
   display: inline-block;
   margin-top: 2.5rem;
-  color: #ff6b35;
+  color: #22c55e;
   font-weight: 500;
 }
 
