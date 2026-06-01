@@ -129,7 +129,7 @@ h2 {
 
 .main-input:focus {
   outline: none;
-  border-color: #ff8c42;
+  border-color: #10b981;
 }
 
 .results {
@@ -149,7 +149,7 @@ h2 {
 }
 
 .result-card:hover {
-  border-color: #ff8c42;
+  border-color: #10b981;
 }
 
 .result-header {
@@ -162,7 +162,7 @@ h2 {
 .base-badge {
   font-size: 0.75rem;
   font-weight: 700;
-  color: #ff6b35;
+  color: #22c55e;
   background: #fff3ed;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
@@ -195,7 +195,7 @@ h2 {
 .btn-copy {
   flex-shrink: 0;
   padding: 0.4rem 1rem;
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  background: linear-gradient(135deg, #22c55e, #10b981);
   color: white;
   border: none;
   border-radius: 6px;
@@ -228,7 +228,7 @@ h2 {
 .back-link {
   display: inline-block;
   margin-top: 2.5rem;
-  color: #ff6b35;
+  color: #22c55e;
   font-weight: 500;
 }
 
