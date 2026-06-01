@@ -84,6 +84,12 @@ const tools = [
     desc: '25分钟专注 + 5分钟休息，圆形进度条，本地存储记录',
     path: '/tools/pomodoro',
   },
+  {
+    icon: '🎵',
+    name: '音频剪辑',
+    desc: '上传音频，可视化波形，精确裁剪区间并导出 WAV/WebM',
+    path: '/tools/audio-trimmer',
+  },
 ]
 </script>
 
@@ -100,7 +106,7 @@ const tools = [
 .hero h1 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  background: linear-gradient(135deg, #22c55e, #10b981);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -130,7 +136,7 @@ const tools = [
 .tool-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  border-color: #ff8c42;
+  border-color: #10b981;
 }
 
 .tool-icon {
