@@ -43,7 +43,7 @@ a {
 }
 
 .app-header {
-  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  background: linear-gradient(135deg, #22c55e, #10b981);
   padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
