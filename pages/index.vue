@@ -90,6 +90,12 @@ const tools = [
     desc: '上传音频，可视化波形，精确裁剪区间并导出 WAV/WebM',
     path: '/tools/audio-trimmer',
   },
+  {
+    icon: '🌐',
+    name: 'IP 信息查询',
+    desc: '输入IP或自动检测，查看归属地/ISP/时区等详细信息',
+    path: '/tools/ip-lookup',
+  },
 ]
 </script>
 
