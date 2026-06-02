@@ -96,6 +96,18 @@ const tools = [
     desc: '输入IP或自动检测，查看归属地/ISP/时区等详细信息',
     path: '/tools/ip-lookup',
   },
+  {
+    icon: '📊',
+    name: '图表生成器',
+    desc: '粘贴数据，一键生成柱状图/折线图/饼图，支持导出PNG',
+    path: '/tools/chart-generator',
+  },
+  {
+    icon: '🎓',
+    name: '抽认卡学习器',
+    desc: '创建卡片+间隔重复算法，高效记忆和复习',
+    path: '/tools/flashcard',
+  },
 ]
 </script>
 
