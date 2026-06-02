@@ -33,7 +33,14 @@ wildfire-station/
 │       ├── bookmarks.vue          # 外部收藏页面
 │       ├── radix.vue              # 进制转换器
 │       ├── css-gradient.vue       # CSS 渐变生成器
-│       └── cron.vue               # Cron 表达式可视化
+│       ├── cron.vue               # Cron 表达式可视化
+│       ├── screen-size.vue        # 屏幕尺寸对比
+│       ├── text-formatter.vue     # 中文文本排版
+│       ├── pomodoro.vue           # 番茄钟计时器
+│       ├── audio-trimmer.vue      # 音频剪辑
+│       ├── ip-lookup.vue          # IP 信息查询
+│       ├── chart-generator.vue    # 在线图表生成器
+│       └── flashcard.vue          # 抽认卡学习器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -58,6 +65,8 @@ wildfire-station/
 | 番茄钟计时器 | `/tools/pomodoro` | 专注/休息自动循环，圆形进度条，音效提醒，本地存储统计 |
 | 音频剪辑 | `/tools/audio-trimmer` | 上传音频，Canvas 波形可视化，精确裁剪区间，导出 WAV/WebM |
 | IP 信息查询 | `/tools/ip-lookup` | 输入IP或自动检测，查看归属地/ISP/时区/经纬度等信息 |
+| 图表生成器 | `/tools/chart-generator` | 支持柱状图/折线图/饼图/环形图，CSV数据输入，5种配色方案，实时预览，导出PNG |
+| 抽认卡学习器 | `/tools/flashcard` | 多卡组管理，卡片翻转动画，Leitner间隔重复算法，localStorage存储，导入/导出JSON |
 
 ## GitHub Actions 部署
 
