@@ -27,7 +27,8 @@ wildfire-station/
 │   ├── index.vue                  # 首页（工具卡片导航）
 │   └── tools/
 │       ├── base64.vue             # Base64 编解码工具
-│       ├── qrcode.vue             # 二维码生成与解码工具
+│       ├── qrcode.vue             # 二维码生成、解码与Logo嵌入工具
+│       ├── ip-lookup.vue          # IP信息查询工具
 │       ├── text-diff.vue          # 文本比对工具
 │       ├── bookmarks.vue          # 外部收藏页面
 │       ├── radix.vue              # 进制转换器
@@ -46,12 +47,17 @@ wildfire-station/
 | 工具 | 路径 | 功能 |
 |------|------|------|
 | Base64 编解码 | `/tools/base64` | 实时编码/解码、模式切换、一键复制 |
-| 二维码工具 | `/tools/qrcode` | 文本生成二维码（可下载）、上传图片解码 |
+| 二维码工具 | `/tools/qrcode` | 文本生成二维码（可下载）、上传图片解码、Logo嵌入 |
 | 文本比对 | `/tools/text-diff` | 对比两段文本差异，类似代码 Diff 效果 |
 | 外部收藏 | `/tools/bookmarks` | 好用的工具、资讯站点、Skill 等资源归档 |
 | 进制转换器 | `/tools/radix` | 二/八/十/十六进制和 Base64 互转，自动识别前缀 |
 | CSS 渐变生成器 | `/tools/css-gradient` | 线性/径向/锥形渐变，实时预览，一键复制代码 |
 | Cron 表达式可视化 | `/tools/cron` | 解析表达式、人类可读描述、字段拆解、执行时间预览 |
+| 屏幕尺寸对比 | `/tools/screen-size` | 多设备尺寸按真实比例 Canvas 绘制对比，英寸/厘米切换，预设常用设备 |
+| 中文文本排版 | `/tools/text-formatter` | 一键修正全角标点、中英文间距、段首缩进，实时预览+复制 |
+| 番茄钟计时器 | `/tools/pomodoro` | 专注/休息自动循环，圆形进度条，音效提醒，本地存储统计 |
+| 音频剪辑 | `/tools/audio-trimmer` | 上传音频，Canvas 波形可视化，精确裁剪区间，导出 WAV/WebM |
+| IP 信息查询 | `/tools/ip-lookup` | 输入IP或自动检测，查看归属地/ISP/时区/经纬度等信息 |
 
 ## GitHub Actions 部署
 
@@ -96,6 +102,25 @@ pnpm generate
 - 使用 `PUT /repos/{owner}/{repo}/contents/{path}` API 创建/更新文件
 - 需要先 `GET` 获取文件 SHA，再 `PUT` 更新
 - Token 认证方式: `Authorization: token <GITHUB_TOKEN>`
+
+### ⚠️ API 推送硬规则（2026-06-01 教训）
+
+**推送文件前必须先拉取远程最新内容到本地！**
+
+1. **本地不存在的文件，禁止直接推送** — 会用空内容覆盖远程文件（bookmarks.vue + text-diff.vue 事故）
+2. **正确流程**：`GET` 远程文件内容 → 写入本地 → 修改 → `base64` 编码 → `PUT` 推送（带 SHA）
+3. **批量推送前**，先拉取 `pages/` 和 `layouts/` 目录下所有文件到本地
+4. **只推送本地实际修改过的文件**，不要盲目推送所有文件
+5. **推送脚本必须包含校验**：
+   ```bash
+   # 禁止推送不存在的文件
+   if [ ! -f "$file" ] || [ ! -s "$file" ]; then
+     echo "SKIP: $file (not found or empty)"
+     continue
+   fi
+   ```
+6. **推送前先拉取远程完整目录同步到本地**，确保本地与远程一致
+7. **改代码前先同步，推送只推明确改过的文件**
 
 ## 安全提醒
 
