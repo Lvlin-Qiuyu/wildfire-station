@@ -108,6 +108,42 @@ const tools = [
     desc: '创建卡片+间隔重复算法，高效记忆和复习',
     path: '/tools/flashcard',
   },
+  {
+    icon: '🔍',
+    name: '正则表达式测试器',
+    desc: '实时匹配高亮+常用模板+匹配分组信息，JS正则可视化',
+    path: '/tools/regex-tester',
+  },
+  {
+    icon: '📋',
+    name: 'JSON 对比',
+    desc: '双面板结构化Diff+类型高亮+路径导航+忽略数组顺序',
+    path: '/tools/json-diff',
+  },
+  {
+    icon: '〰️',
+    name: 'CSS 缓动曲线',
+    desc: '拖拽控制点+预设曲线库+动画预览球，一键复制 cubic-bezier',
+    path: '/tools/css-easing',
+  },
+  {
+    icon: '🖼️',
+    name: '图片格式转换',
+    desc: 'PNG/JPG/WebP互转，批量处理，质量可调，对比预览',
+    path: '/tools/image-converter',
+  },
+  {
+    icon: '🔗',
+    name: 'URL 编解码',
+    desc: '实时编解码+完整/安全模式+常用场景模板，一键复制',
+    path: '/tools/url-encoder',
+  },
+  {
+    icon: '📊',
+    name: 'Markdown 表格',
+    desc: '可视化网格编辑器+实时MD预览+对齐设置+一键复制',
+    path: '/tools/md-table',
+  },
 ]
 </script>
 
