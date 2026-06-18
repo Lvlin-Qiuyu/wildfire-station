@@ -98,7 +98,7 @@ useHead({ title: 'IEEE 754 浮点数转换器 - 野火小站' })
 const inputVal = ref('3.14')
 const inputMode = ref('float')
 
-function parseFloat32(num: number) {
+function parseFloat32(num) {
   const buf = new ArrayBuffer(4)
   new Float32Array(buf)[0] = num
   const uint = new Uint32Array(buf)[0]
@@ -120,7 +120,7 @@ function parseFloat32(num: number) {
   }
 }
 
-function parseFloat64(num: number) {
+function parseFloat64(num) {
   const buf = new ArrayBuffer(8)
   new Float64Array(buf)[0] = num
   const high = new Uint32Array(buf)[1]
@@ -140,12 +140,12 @@ function parseFloat64(num: number) {
   }
 }
 
-function fromBinary32(bin: string) {
+function fromBinary32(bin) {
   const uint = parseInt(bin, 2)
   return new Float32Array(new Uint32Array([uint]).buffer)[0]
 }
 
-function fromBinary64(bin: string) {
+function fromBinary64(bin) {
   const high = parseInt(bin.slice(0, 32), 2)
   const low = parseInt(bin.slice(32), 2)
   return new Float64Array(new Uint32Array([low, high]).buffer)[0]
@@ -173,22 +173,22 @@ const float64 = computed(() => parseFloat64(currentFloat.value))
 const bits32 = computed(() => float32.value.bits.split(''))
 const bits64 = computed(() => float64.value.bits.split(''))
 
-function bitClass32(idx: number) {
+function bitClass32(idx) {
   if (idx === 0) return 'sign-bit'
   if (idx < 9) return 'exp-bit'
   return 'mant-bit'
 }
-function bitClass64(idx: number) {
+function bitClass64(idx) {
   if (idx === 0) return 'sign-bit'
   if (idx < 11) return 'exp-bit'
   return 'mant-bit'
 }
-function bitLabel32(idx: number) {
+function bitLabel32(idx) {
   if (idx === 0) return '符号位'
   if (idx < 9) return `指数位 E${idx - 1}`
   return `尾数位 M${idx - 9}`
 }
-function bitLabel64(idx: number) {
+function bitLabel64(idx) {
   if (idx === 0) return '符号位'
   if (idx < 11) return `指数位 E${idx - 1}`
   return `尾数位 M${idx - 11}`
