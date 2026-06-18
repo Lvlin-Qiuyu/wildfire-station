@@ -99,7 +99,7 @@ const previewStyle = computed(() => ({
 }))
 
 const cssCode = computed(() => {
-  const animDefs: Record<string, string> = {
+  const animDefs = {
     flow: `@keyframes gradient-flow {\n  0% { background-position: 0% 50%; }\n  50% { background-position: 100% 50%; }\n  100% { background-position: 0% 50%; }\n}`,
     blink: `@keyframes gradient-blink {\n  0%, 100% { opacity: 1; }\n  50% { opacity: 0.3; }\n}`,
     pulse: `@keyframes gradient-pulse {\n  0%, 100% { background-size: 100% 100%; filter: brightness(1); }\n  50% { background-size: 200% 200%; filter: brightness(1.3); }\n}`
