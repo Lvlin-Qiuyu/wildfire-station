@@ -40,7 +40,22 @@ wildfire-station/
 │       ├── audio-trimmer.vue      # 音频剪辑
 │       ├── ip-lookup.vue          # IP 信息查询
 │       ├── chart-generator.vue    # 在线图表生成器
-│       └── flashcard.vue          # 抽认卡学习器
+│       ├── flashcard.vue          # 抽认卡学习器
+       ├── image-converter.vue    # 图片格式转换器
+       ├── url-encoder.vue        # URL 编解码工具
+       ├── md-table.vue           # Markdown 表格生成器
+       ├── regex-tester.vue       # 正则表达式可视化测试器
+       ├── json-diff.vue          # JSON 对比工具
+       └── css-easing.vue         # CSS 缓动曲线生成器
+       ├── watermark.vue          # 图片水印工具
+       ├── json-schema.vue        # JSON Schema 生成器
+       ├── svg-icons.vue          # SVG 图标生成器
+       ├── css-text-gradient.vue   # CSS 渐变文字动画
+       ├── regex-visualizer.vue    # 正则表达式可视化调试器
+       ├── ieee754.vue             # IEEE 754 浮点数转换器
+       ├── health-check.vue       # 网站健康检查器
+       ├── social-copywriter.vue   # 社交文案助手
+       └── generator-suite.vue    # 多功能生成器套件
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -67,6 +82,30 @@ wildfire-station/
 | IP 信息查询 | `/tools/ip-lookup` | 输入IP或自动检测，查看归属地/ISP/时区/经纬度等信息 |
 | 图表生成器 | `/tools/chart-generator` | 支持柱状图/折线图/饼图/环形图，CSV数据输入，5种配色方案，实时预览，导出PNG |
 | 抽认卡学习器 | `/tools/flashcard` | 多卡组管理，卡片翻转动画，Leitner间隔重复算法，localStorage存储，导入/导出JSON |
+| 图片格式转换 | `/tools/image-converter` | 拖拽上传、批量处理、PNG/JPG/WebP互转、质量调节、背景色填充、前后对比预览 |
+| URL 编解码 | `/tools/url-encoder` | 实时编码/解码、完整/安全编码模式、常用场景模板、一键复制 |
+| Markdown 表格生成器 | `/tools/md-table` | 可视化表格编辑、行列增删、列对齐设置、实时预览、渲染效果预览、预设模板 |
+| 正则表达式测试器 | `/tools/regex-tester` | 常用模板、修饰符切换、实时高亮匹配、分组信息、错误提示 |
+| JSON 对比工具 | `/tools/json-diff` | 双面板输入、自动格式化、类型高亮、结构化diff路径、数组顺序忽略、统计信息 |
+| CSS 缓动曲线生成器 | `/tools/css-easing` | 贝塞尔曲线可视化、拖拽控制点、14种预设、动画预览、一键复制CSS |
+| 图片水印工具 | `/tools/watermark` | 拖拽/点击上传、文字水印（内容/大小/颜色/透明度/角度/9宫格位置）、平铺模式、导出PNG/JPG |
+| JSON Schema 生成器 | `/tools/json-schema` | 粘贴JSON自动推断类型生成Draft-07 Schema、递归分析、格式化输出、一键复制 |
+| SVG 图标生成器 | `/tools/svg-icons` | 30+预设图标、可调颜色/大小/描边宽度/填充、实时预览、SVG代码输出、一键复制 |
+| CSS 渐变文字动画 | `/tools/css-text-gradient` | 输入文字、多色渐变、流动/闪烁/脉冲动画、方向速度可调、实时预览、一键复制CSS |
+| 正则表达式可视化调试器 | `/tools/regex-visualizer` | 正则结构分块着色解析（分组/量词/字符类/锚点/转义）、匹配高亮、捕获组显示 |
+| IEEE 754 浮点数转换器 | `/tools/ieee754` | 输入浮点数显示32/64位表示、色块显示符号/指数/尾数、数值分解、支持二进制位串反向输入 |
+| 网站健康检查器 | `/tools/health-check` | 输入URL检测HTTP状态码/响应时间/Content-Type、CORS限制提示、卡片式结果展示 |
+| 社交文案助手 | `/tools/social-copywriter` | 实时字数/词数/Emoji统计、Emoji分析、关键词Hashtag建议、微博/微信/Twitter/X等平台限制检查 |
+| 多功能生成器套件 | `/tools/generator-suite` | Tab切换：密码生成器（可配置字符集/批量）、UUID v4生成器（批量）、中文假文生成（可选字数） |
+| 智能色彩搭配 | `/tools/color-palette` | 输入主色自动生成互补色/类比色/三色/分裂互补配色，色块预览+hex值，一键复制CSS变量代码，HSL算法 |
+| 智能时间工具箱 | `/tools/time-toolkit` | Tab切换：时间差计算、倒计时器、时区转换、时间戳转换，实时更新 |
+| JWT 调试工具 | `/tools/jwt-debugger` | 粘贴JWT自动分割三段，Header/Payload base64解码JSON格式化+语法高亮，过期时间检查 |
+| 万能编码转换器 | `/tools/encoding-converter` | 输入文本实时显示Hex/Octal/Binary/Unicode/HTML实体/CSS转义/URL/Base64/UTF-8/Punycode |
+| 纯前端图片压缩 | `/tools/image-compressor` | 拖拽上传、质量滑块、格式选择JPG/PNG/WebP、压缩前后对比预览+文件大小+压缩率、Canvas API实现 |
+| JSON 格式化与校验 | `/tools/json-formatter` | 自动格式化+语法高亮、错误位置标记、缩进选择、树形折叠展示、压缩单行 |
+| Markdown 实时预览 | `/tools/markdown-preview` | 左栏输入右栏实时渲染，自实现解析器（标题/加粗/斜体/代码块/列表/链接/表格等），代码高亮 |
+| 中文小说排版助手 | `/tools/novel-typesetter` | 智能分段、中英文标点修正、繁简转换、首行缩进，可调每行字数/段落间距/字体大小 |
+| Excel 数据可视化 | `/tools/excel-visualizer` | CSV/Excel文件拖拽上传，自动识别列类型，柱状图/折线图/饼图Canvas绘制，鼠标悬停数据，导出PNG |
 
 ## GitHub Actions 部署
 
