@@ -75,7 +75,7 @@ const errorMsg = ref('')
 
 const parsedTokens = computed(() => {
   if (!pattern.value) return []
-  const tokens: { text: string; type: string; desc: string }[] = []
+  const tokens = []
   let i = 0
   const p = pattern.value
   while (i < p.length) {
@@ -143,7 +143,7 @@ const parsedTokens = computed(() => {
   return tokens
 })
 
-function isGroupOpen(tokens: { type: string }[]) {
+function isGroupOpen(tokens) {
   let depth = 0
   for (const t of tokens) {
     if (t.type === 'group' && t.text.endsWith(')')) continue
@@ -157,7 +157,7 @@ const matchResults = computed(() => {
   errorMsg.value = ''
   try {
     const re = new RegExp(pattern.value, flags.value)
-    const results: RegExpExecArray[] = []
+    const results = []
     if (flags.value.includes('g')) {
       let m
       while ((m = re.exec(testText.value)) !== null) {
@@ -169,7 +169,7 @@ const matchResults = computed(() => {
       if (m) results.push(m)
     }
     return results
-  } catch (e: any) {
+  } catch (e) {
     errorMsg.value = e.message
     return []
   }
@@ -177,7 +177,7 @@ const matchResults = computed(() => {
 
 const highlightSegments = computed(() => {
   if (!matchResults.value.length) return []
-  const segs: { text: string; match: boolean }[] = []
+  const segs = []
   let lastEnd = 0
   for (const m of matchResults.value) {
     if (m.index > lastEnd) segs.push({ text: testText.value.slice(lastEnd, m.index), match: false })
@@ -189,7 +189,7 @@ const highlightSegments = computed(() => {
 })
 
 const captureGroups = computed(() => {
-  const groups: { values: string[] }[] = []
+  const groups = []
   for (const m of matchResults.value) {
     for (let i = 1; i < m.length; i++) {
       if (!groups[i - 1]) groups[i - 1] = { values: [] }
