@@ -100,7 +100,7 @@ const emojiCount = computed(() => (text.value.match(emojiRegex) || []).length)
 
 const emojis = computed(() => {
   const matches = text.value.match(emojiRegex) || []
-  const map = new Map<string, number>()
+  const map = new Map()
   for (const m of matches) map.set(m, (map.get(m) || 0) + 1)
   return Array.from(map.entries()).map(([char, count]) => ({ char, count })).sort((a, b) => b.count - a.count)
 })
@@ -130,7 +130,7 @@ function copyHashtags() {
   navigator.clipboard.writeText(t)
 }
 
-function copyOne(tag: string) {
+function copyOne(tag) {
   navigator.clipboard.writeText(`#${tag}`)
 }
 </script>
