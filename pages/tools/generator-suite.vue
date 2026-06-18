@@ -101,7 +101,7 @@ const pwLower = ref(true)
 const pwDigits = ref(true)
 const pwSymbols = ref(true)
 const pwExcludeAmbiguous = ref(false)
-const passwords = ref<string[]>([])
+const passwords = ref([])
 
 function generatePasswords() {
   let chars = ''
@@ -124,7 +124,7 @@ function generatePasswords() {
 // UUID
 const uuidCount = ref(5)
 const uuidUpper = ref(false)
-const uuids = ref<string[]>([])
+const uuids = ref([])
 
 function generateUUIDs() {
   uuids.value = Array.from({ length: uuidCount.value }, () => {
@@ -159,7 +159,7 @@ function generateLorem() {
   loremText.value = result.slice(0, loremLen.value).replace(/[，。]$/, '。')
 }
 
-function copyText(text: string) {
+function copyText(text) {
   navigator.clipboard.writeText(text).then(() => {
     // brief feedback handled by browser
   })
