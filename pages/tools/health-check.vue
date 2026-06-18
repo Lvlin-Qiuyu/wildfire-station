@@ -44,7 +44,7 @@ useHead({ title: '网站健康检查器 - 野火小站' })
 
 const url = ref('')
 const checking = ref(false)
-const results = ref<any[]>([])
+const results = ref([])
 const corsWarning = ref(false)
 
 async function startCheck() {
@@ -73,7 +73,7 @@ async function startCheck() {
       { label: '缓存控制', value: resp.headers.get('cache-control') || '无', status: 'ok', desc: resp.headers.get('cache-control') ? '已配置缓存策略' : '未设置缓存头' },
       { label: 'URL 可达性', value: '✅ 可访问', status: 'ok', desc: 'fetch 请求成功' },
     ]
-  } catch (e: any) {
+  } catch (e) {
     const elapsed = performance.now() - start
     results.value = [
       { label: 'URL 可达性', value: '❌ 请求失败', status: 'error', desc: `错误: ${e.message}` },
