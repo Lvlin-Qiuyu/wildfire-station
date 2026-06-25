@@ -252,6 +252,24 @@ const tools = [
     desc: '上传CSV/Excel，自动识别数据，一键生成柱状图/折线图/饼图',
     path: '/tools/excel-visualizer',
   },
+  {
+    icon: '⚖️',
+    name: 'BMI 与健康指标计算器',
+    desc: '身高体重计算 BMI、基础代谢率、每日所需热量，彩色仪表盘可视化',
+    path: '/tools/bmi-calculator',
+  },
+  {
+    icon: '📄',
+    name: '纸张尺寸对比工具',
+    desc: 'ISO 216 标准 A/B/C 系列，按真实比例 Canvas 对比，可调 DPI 像素尺寸',
+    path: '/tools/paper-size',
+  },
+  {
+    icon: '🔐',
+    name: '哈希计算器',
+    desc: '支持 MD5/SHA-1/SHA-256/SHA-512，文本实时计算，文件拖拽上传',
+    path: '/tools/hash-calculator',
+  },
 ]
 </script>
 
