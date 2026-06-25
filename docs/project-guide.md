@@ -55,7 +55,19 @@ wildfire-station/
        ├── ieee754.vue             # IEEE 754 浮点数转换器
        ├── health-check.vue       # 网站健康检查器
        ├── social-copywriter.vue   # 社交文案助手
-       └── generator-suite.vue    # 多功能生成器套件
+       ├── generator-suite.vue    # 多功能生成器套件
+       ├── color-palette.vue      # 智能色彩搭配
+       ├── time-toolkit.vue       # 智能时间工具箱
+       ├── jwt-debugger.vue       # JWT 调试工具
+       ├── encoding-converter.vue  # 万能编码转换器
+       ├── image-compressor.vue    # 图片压缩
+       ├── json-formatter.vue     # JSON 格式化校验
+       ├── markdown-preview.vue   # Markdown 实时预览
+       ├── novel-typesetter.vue   # 小说排版助手
+       ├── excel-visualizer.vue   # Excel 数据可视化
+       ├── bmi-calculator.vue     # BMI 与健康指标计算器
+       ├── paper-size.vue         # 纸张尺寸对比工具
+       └── hash-calculator.vue    # 哈希计算器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -106,6 +118,9 @@ wildfire-station/
 | Markdown 实时预览 | `/tools/markdown-preview` | 左栏输入右栏实时渲染，自实现解析器（标题/加粗/斜体/代码块/列表/链接/表格等），代码高亮 |
 | 中文小说排版助手 | `/tools/novel-typesetter` | 智能分段、中英文标点修正、繁简转换、首行缩进，可调每行字数/段落间距/字体大小 |
 | Excel 数据可视化 | `/tools/excel-visualizer` | CSV/Excel文件拖拽上传，自动识别列类型，柱状图/折线图/饼图Canvas绘制，鼠标悬停数据，导出PNG |
+| BMI 与健康指标计算器 | `/tools/bmi-calculator` | 身高/体重/年龄/性别输入，BMI值+分类、理想体重范围、BMR基础代谢率（Mifflin-St Jeor公式）、5档TDEE每日热量，Canvas仪表盘可视化，滑块交互 |
+| 纸张尺寸对比工具 | `/tools/paper-size` | ISO 216标准A/B/C系列（A0-A10/B0-B10/C0-C10），Canvas按真实比例绘制对比、缩放查看、可调DPI像素尺寸、mm/inch切换、完整参考表 |
+| 哈希计算器 | `/tools/hash-calculator` | 支持MD5（纯JS实现）/SHA-1/SHA-256/SHA-512（Web Crypto API），文本模式实时计算、文件模式拖拽上传，算法全选/反选，一键复制 |
 
 ## GitHub Actions 部署
 
