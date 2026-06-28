@@ -41,33 +41,42 @@ wildfire-station/
 │       ├── ip-lookup.vue          # IP 信息查询
 │       ├── chart-generator.vue    # 在线图表生成器
 │       ├── flashcard.vue          # 抽认卡学习器
-       ├── image-converter.vue    # 图片格式转换器
-       ├── url-encoder.vue        # URL 编解码工具
-       ├── md-table.vue           # Markdown 表格生成器
-       ├── regex-tester.vue       # 正则表达式可视化测试器
-       ├── json-diff.vue          # JSON 对比工具
-       └── css-easing.vue         # CSS 缓动曲线生成器
-       ├── watermark.vue          # 图片水印工具
-       ├── json-schema.vue        # JSON Schema 生成器
-       ├── svg-icons.vue          # SVG 图标生成器
-       ├── css-text-gradient.vue   # CSS 渐变文字动画
-       ├── regex-visualizer.vue    # 正则表达式可视化调试器
-       ├── ieee754.vue             # IEEE 754 浮点数转换器
-       ├── health-check.vue       # 网站健康检查器
-       ├── social-copywriter.vue   # 社交文案助手
-       ├── generator-suite.vue    # 多功能生成器套件
-       ├── color-palette.vue      # 智能色彩搭配
-       ├── time-toolkit.vue       # 智能时间工具箱
-       ├── jwt-debugger.vue       # JWT 调试工具
-       ├── encoding-converter.vue  # 万能编码转换器
-       ├── image-compressor.vue    # 图片压缩
-       ├── json-formatter.vue     # JSON 格式化校验
-       ├── markdown-preview.vue   # Markdown 实时预览
-       ├── novel-typesetter.vue   # 小说排版助手
-       ├── excel-visualizer.vue   # Excel 数据可视化
-       ├── bmi-calculator.vue     # BMI 与健康指标计算器
-       ├── paper-size.vue         # 纸张尺寸对比工具
-       └── hash-calculator.vue    # 哈希计算器
+│       ├── unicode-lookup.vue     # Unicode字符查询工具
+│       ├── text-analyzer.vue      # 自然语言处理器
+│       ├── image-converter.vue    # 图片格式转换器
+│       ├── url-encoder.vue        # URL 编解码工具
+│       ├── md-table.vue           # Markdown 表格生成器
+│       ├── regex-tester.vue       # 正则表达式可视化测试器
+│       ├── json-diff.vue          # JSON 对比工具
+│       └── css-easing.vue         # CSS 缓动曲线生成器
+│       ├── watermark.vue          # 图片水印工具
+│       ├── json-schema.vue        # JSON Schema 生成器
+│       ├── svg-icons.vue          # SVG 图标生成器
+│       ├── css-text-gradient.vue   # CSS 渐变文字动画
+│       ├── css-shadow-border-generator.vue  # CSS 阴影边框生成器
+│       ├── regex-visualizer.vue    # 正则表达式可视化调试器
+│       ├── ieee754.vue             # IEEE 754 浮点数转换器
+│       ├── health-check.vue       # 网站健康检查器
+│       ├── social-copywriter.vue   # 社交文案助手
+│       ├── generator-suite.vue    # 多功能生成器套件
+│       ├── color-palette.vue      # 智能色彩搭配
+│       ├── time-toolkit.vue       # 智能时间工具箱
+│       ├── jwt-debugger.vue       # JWT 调试工具
+│       ├── encoding-converter.vue  # 万能编码转换器
+│       ├── image-compressor.vue    # 图片压缩
+│       ├── json-formatter.vue     # JSON 格式化校验
+│       ├── markdown-preview.vue   # Markdown 实时预览
+│       ├── novel-typesetter.vue   # 小说排版助手
+│       ├── excel-visualizer.vue   # Excel 数据可视化
+│       ├── bmi-calculator.vue     # BMI 与健康指标计算器
+│       ├── paper-size.vue         # 纸张尺寸对比工具
+│       ├── hash-calculator.vue    # 哈希计算器
+│       ├── wcag-contrast.vue     # WCAG 对比度检查器
+│       ├── image-color-extractor.vue  # 图片取色与主色提取器
+│       ├── jsonpath-tester.vue    # JSONPath 查询测试器
+│       ├── bill-splitter.vue      # 智能账单分摊助手
+│       ├── audio-info-analyzer.vue  # 多格式音频文件信息分析器
+│       └── size-comparator.vue      # 生活物品尺寸对比器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -104,6 +113,7 @@ wildfire-station/
 | JSON Schema 生成器 | `/tools/json-schema` | 粘贴JSON自动推断类型生成Draft-07 Schema、递归分析、格式化输出、一键复制 |
 | SVG 图标生成器 | `/tools/svg-icons` | 30+预设图标、可调颜色/大小/描边宽度/填充、实时预览、SVG代码输出、一键复制 |
 | CSS 渐变文字动画 | `/tools/css-text-gradient` | 输入文字、多色渐变、流动/闪烁/脉冲动画、方向速度可调、实时预览、一键复制CSS |
+| CSS 阴影边框生成器 | `/tools/css-shadow-border-generator` | 阴影XY/模糊/扩展/颜色/透明度、边框样式/宽度/颜色、圆角、背景色、6种预设、实时预览、一键复制CSS |
 | 正则表达式可视化调试器 | `/tools/regex-visualizer` | 正则结构分块着色解析（分组/量词/字符类/锚点/转义）、匹配高亮、捕获组显示 |
 | IEEE 754 浮点数转换器 | `/tools/ieee754` | 输入浮点数显示32/64位表示、色块显示符号/指数/尾数、数值分解、支持二进制位串反向输入 |
 | 网站健康检查器 | `/tools/health-check` | 输入URL检测HTTP状态码/响应时间/Content-Type、CORS限制提示、卡片式结果展示 |
@@ -121,6 +131,14 @@ wildfire-station/
 | BMI 与健康指标计算器 | `/tools/bmi-calculator` | 身高/体重/年龄/性别输入，BMI值+分类、理想体重范围、BMR基础代谢率（Mifflin-St Jeor公式）、5档TDEE每日热量，Canvas仪表盘可视化，滑块交互 |
 | 纸张尺寸对比工具 | `/tools/paper-size` | ISO 216标准A/B/C系列（A0-A10/B0-B10/C0-C10），Canvas按真实比例绘制对比、缩放查看、可调DPI像素尺寸、mm/inch切换、完整参考表 |
 | 哈希计算器 | `/tools/hash-calculator` | 支持MD5（纯JS实现）/SHA-1/SHA-256/SHA-512（Web Crypto API），文本模式实时计算、文件模式拖拽上传，算法全选/反选，一键复制 |
+| WCAG 对比度检查器 | `/tools/wcag-contrast` | 前景/背景色选择器（color picker + HEX输入），W3C相对亮度算法实时计算对比度比值，WCAG 2.1 AA/AAA四级合规性检查（正常文本/大文本），实际颜色文本预览，一键交换前景/背景色 |
+| 图片取色与主色提取器 | `/tools/image-color-extractor` | 拖拽/点击上传图片，Canvas像素读取+中位切割量化算法自动提取6个主色调生成调色板，点击图片任意位置取色显示HEX/RGB/HSL，图片尺寸/文件大小信息，调色板一键复制 |
+| JSONPath 查询测试器 | `/tools/jsonpath-tester` | JSON数据输入区+JSONPath表达式输入，jsonpath-plus CDN库实时查询，结果语法高亮（字符串/数字/布尔值着色），可折叠语法参考面板，5个预设示例（书店/用户/嵌套/递归/切片），JSON格式化按钮 |
+| Unicode字符查询工具 | `/tools/unicode-lookup` | 字符/代码点输入，查询Unicode信息、UTF-16/UTF-8编码、字符名称、类别、双向属性，支持快速搜索和相似字符推荐 |
+| 自然语言处理器 | `/tools/text-analyzer` | 文本分析工具：词频统计、关键词提取、情感分析、可读性评分、文档类型检测、中英文分词、详细统计（字符/词数/句子/段落数） |
+| 智能账单分摊助手 | `/tools/bill-splitter` | 动态人员管理+多项目账单+勾选消费人员自动均摊+小费按消费占比分配+预设小费比例+分摊汇总+明细折叠表格+复制结果文本发群聊+一键重置 |
+| 多格式音频信息分析器 | `/tools/audio-info-analyzer` | 上传15+种格式音频，Web Audio API解码获取比特率/时长/声道/采样率/格式详情，频谱柱状图+波形预览Canvas可视化，音质评估，完整参数表+复制纯文本/JSON |
+| 生活物品尺寸对比器 | `/tools/size-comparator` | 6大分类预设物品（手机/电脑/电视/纸张/家具/显示器），自定义尺寸输入，Canvas按真实比例绘制对比+比例尺，自动分析面积排名/对角线范围/宽高比/容纳关系 |
 
 ## GitHub Actions 部署
 
