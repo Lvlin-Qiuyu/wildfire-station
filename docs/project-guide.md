@@ -76,7 +76,8 @@ wildfire-station/
 │       ├── jsonpath-tester.vue    # JSONPath 查询测试器
 │       ├── bill-splitter.vue      # 智能账单分摊助手
 │       ├── audio-info-analyzer.vue  # 多格式音频文件信息分析器
-│       └── size-comparator.vue      # 生活物品尺寸对比器
+│       ├── size-comparator.vue      # 生活物品尺寸对比器
+│       └── multi-platform-size-adaptor.vue  # 多平台素材尺寸快速适配器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -139,6 +140,7 @@ wildfire-station/
 | 智能账单分摊助手 | `/tools/bill-splitter` | 动态人员管理+多项目账单+勾选消费人员自动均摊+小费按消费占比分配+预设小费比例+分摊汇总+明细折叠表格+复制结果文本发群聊+一键重置 |
 | 多格式音频信息分析器 | `/tools/audio-info-analyzer` | 上传15+种格式音频，Web Audio API解码获取比特率/时长/声道/采样率/格式详情，频谱柱状图+波形预览Canvas可视化，音质评估，完整参数表+复制纯文本/JSON |
 | 生活物品尺寸对比器 | `/tools/size-comparator` | 6大分类预设物品（手机/电脑/电视/纸张/家具/显示器），自定义尺寸输入，Canvas按真实比例绘制对比+比例尺，自动分析面积排名/对角线范围/宽高比/容纳关系 |
+| 多平台素材尺寸快速适配器 | `/tools/multi-platform-size-adaptor` | 上传图片一键生成21种主流社交平台适配尺寸（微信/微博/抖音/小红书/B站/X/Instagram/Facebook/LinkedIn/YouTube），三种适配模式（裁剪填充/完整显示/拉伸），Canvas裁剪+缩放算法纯前端实现，批量下载+复制到剪贴板 |
 
 ## GitHub Actions 部署
 
