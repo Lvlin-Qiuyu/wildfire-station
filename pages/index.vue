@@ -342,6 +342,12 @@ const tools = [
     desc: '手机/电脑/电视/纸张/家具等物品的可视化尺寸对比，自动分析比例关系和容纳建议',
     path: '/tools/size-comparator',
   },
+  {
+    icon: '📱',
+    name: '多平台素材尺寸适配器',
+    desc: '上传一张图，一键生成微信/抖音/小红书/X/Instagram等主流平台适配尺寸，批量下载',
+    path: '/tools/multi-platform-size-adaptor',
+  },
 ]
 </script>
 
