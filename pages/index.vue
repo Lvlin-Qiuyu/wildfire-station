@@ -25,6 +25,24 @@ useHead({ title: '野火小站 - 在线工具箱' })
 
 const tools = [
   {
+    icon: '🔐',
+    name: 'AES-256加密解密',
+    desc: '使用AES-256算法保护隐私数据，支持文本和文件加密',
+    path: '/tools/aes256-text-encryptor',
+  },
+  {
+    icon: '🎓',
+    name: '智能学习追踪器',
+    desc: '番茄钟+间隔重复+记忆曲线的AI辅助学习工具',
+    path: '/tools/smart-learning-tracker',
+  },
+  {
+    icon: '🧮',
+    name: '生活计算器套件',
+    desc: '房贷BMI个税汇率换算一站式解决方案',
+    path: '/tools/life-calculator-suite',
+  },
+  {
     icon: '🔤',
     name: 'Base64 编解码',
     desc: '文本与 Base64 互相转换，支持实时编解码',
@@ -269,6 +287,60 @@ const tools = [
     name: '哈希计算器',
     desc: '支持 MD5/SHA-1/SHA-256/SHA-512，文本实时计算，文件拖拽上传',
     path: '/tools/hash-calculator',
+  },
+  {
+    icon: '⚖️',
+    name: 'WCAG 对比度检查器',
+    desc: '输入前景/背景色，实时计算对比度比值，检查 WCAG 2.1 AA/AAA 合规性',
+    path: '/tools/wcag-contrast',
+  },
+  {
+    icon: '🎨',
+    name: '图片取色与主色提取',
+    desc: '上传图片自动提取主色调生成调色板，点击任意位置取色（HEX/RGB/HSL）',
+    path: '/tools/image-color-extractor',
+  },
+  {
+    icon: '🧮',
+    name: 'JSONPath 查询测试器',
+    desc: '输入JSON数据和JSONPath表达式，实时匹配高亮结果，支持语法参考和预设示例',
+    path: '/tools/jsonpath-tester',
+  },
+  {
+    icon: '🔤',
+    name: 'Unicode字符查询工具',
+    desc: '查询字符的Unicode信息、编码、类别等详细信息，支持字符和代码点输入',
+    path: '/tools/unicode-lookup',
+  },
+  {
+    icon: '📝',
+    name: '自然语言处理器',
+    desc: '文本分析工具：词频统计、关键词提取、情感分析、可读性评分',
+    path: '/tools/text-analyzer',
+  },
+  {
+    icon: '🧾',
+    name: '智能账单分摊助手',
+    desc: '聚餐后实时计算每个人应付金额，支持多项目分账、小费比例调整、自动汇总',
+    path: '/tools/bill-splitter',
+  },
+  {
+    icon: '🔲',
+    name: 'CSS 阴影边框生成器',
+    desc: '调节阴影/边框/圆角参数，实时预览，多种预设，一键复制CSS代码',
+    path: '/tools/css-shadow-border-generator',
+  },
+  {
+    icon: '🎵',
+    name: '音频信息分析器',
+    desc: '上传音频文件，显示比特率、时长、声道、编码格式等详细信息，频谱与波形可视化',
+    path: '/tools/audio-info-analyzer',
+  },
+  {
+    icon: '📏',
+    name: '生活物品尺寸对比器',
+    desc: '手机/电脑/电视/纸张/家具等物品的可视化尺寸对比，自动分析比例关系和容纳建议',
+    path: '/tools/size-comparator',
   },
 ]
 </script>
