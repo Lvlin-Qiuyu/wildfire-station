@@ -372,6 +372,30 @@ const tools = [
     desc: '可视化展示60+个HTTP状态码，按类别分组，搜索过滤，点击查看详细说明',
     path: '/tools/http-status-codes',
   },
+  {
+    icon: '👁️',
+    name: '色盲模拟与无障碍检测器',
+    desc: '模拟8种色盲视觉效果，Canvas像素级变换，WCAG AA/AAA对比度检测',
+    path: '/tools/color-blindness-simulator',
+  },
+  {
+    icon: '🔐',
+    name: '经典密码编解码器',
+    desc: '凯撒/摩尔斯/维吉尼亚/栅栏/ROT13五种经典算法，加密解密双向转换',
+    path: '/tools/classic-cipher',
+  },
+  {
+    icon: '📝',
+    name: 'Lorem Ipsum 生成器',
+    desc: '英文Lorem词库+中文随机段落，参数可调，一键复制纯文本和HTML',
+    path: '/tools/lorem-generator',
+  },
+  {
+    icon: '📊',
+    name: '随机数据表格生成器',
+    desc: '生成姓名/手机/邮箱/地址等模拟数据，表格展示，支持导出CSV和JSON',
+    path: '/tools/fake-data-generator',
+  },
 ]
 </script>
 
