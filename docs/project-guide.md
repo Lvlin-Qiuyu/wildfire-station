@@ -77,7 +77,11 @@ wildfire-station/
 │       ├── bill-splitter.vue      # 智能账单分摊助手
 │       ├── audio-info-analyzer.vue  # 多格式音频文件信息分析器
 │       ├── size-comparator.vue      # 生活物品尺寸对比器
-│       └── multi-platform-size-adaptor.vue  # 多平台素材尺寸快速适配器
+│       ├── multi-platform-size-adaptor.vue  # 多平台素材尺寸快速适配器
+    ├── data-format-converter.vue        # 数据格式互转器
+    ├── sql-formatter.vue                # SQL 格式化与美化工具
+    ├── json-to-typescript.vue           # JSON/YAML转TypeScript类型生成器
+    └── http-status-codes.vue            # HTTP 状态码速查手册
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -141,6 +145,10 @@ wildfire-station/
 | 多格式音频信息分析器 | `/tools/audio-info-analyzer` | 上传15+种格式音频，Web Audio API解码获取比特率/时长/声道/采样率/格式详情，频谱柱状图+波形预览Canvas可视化，音质评估，完整参数表+复制纯文本/JSON |
 | 生活物品尺寸对比器 | `/tools/size-comparator` | 6大分类预设物品（手机/电脑/电视/纸张/家具/显示器），自定义尺寸输入，Canvas按真实比例绘制对比+比例尺，自动分析面积排名/对角线范围/宽高比/容纳关系 |
 | 多平台素材尺寸快速适配器 | `/tools/multi-platform-size-adaptor` | 上传图片一键生成21种主流社交平台适配尺寸（微信/微博/抖音/小红书/B站/X/Instagram/Facebook/LinkedIn/YouTube），三种适配模式（裁剪填充/完整显示/拉伸），Canvas裁剪+缩放算法纯前端实现，批量下载+复制到剪贴板 |
+| 数据格式互转器 | `/tools/data-format-converter` | CSV/JSON/YAML/XML/Markdown表格互相转换，粘贴即转，支持文件拖拽上传和下载，双栏布局，自动格式识别 |
+| SQL 格式化与美化工具 | `/tools/sql-formatter` | 粘贴SQL自动格式化，关键字语法高亮，方言选择（MySQL/PostgreSQL/SQLite），缩进风格（2空格/4空格/Tab）、关键字大小写，一键复制 |
+| JSON/YAML转TypeScript类型生成器 | `/tools/json-to-typescript` | 粘贴JSON或YAML自动生成TypeScript interface/type定义，递归遍历生成嵌套类型，数组→T[]、null→可选字段，根类型命名可配置 |
+| HTTP 状态码速查手册 | `/tools/http-status-codes` | 可视化展示60+个HTTP状态码（1xx-5xx），卡片布局，搜索过滤、分类切换，点击查看详细说明/常见场景/使用建议 |
 
 ## GitHub Actions 部署
 
