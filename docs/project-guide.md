@@ -82,6 +82,10 @@ wildfire-station/
     ├── sql-formatter.vue                # SQL 格式化与美化工具
     ├── json-to-typescript.vue           # JSON/YAML转TypeScript类型生成器
     └── http-status-codes.vue            # HTTP 状态码速查手册
+    ├── color-blindness-simulator.vue    # 色盲模拟与无障碍检测器
+    ├── classic-cipher.vue               # 经典密码编解码器
+    ├── lorem-generator.vue              # Lorem Ipsum 智能文本生成器
+    └── fake-data-generator.vue          # 随机数据表格生成器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -149,6 +153,10 @@ wildfire-station/
 | SQL 格式化与美化工具 | `/tools/sql-formatter` | 粘贴SQL自动格式化，关键字语法高亮，方言选择（MySQL/PostgreSQL/SQLite），缩进风格（2空格/4空格/Tab）、关键字大小写，一键复制 |
 | JSON/YAML转TypeScript类型生成器 | `/tools/json-to-typescript` | 粘贴JSON或YAML自动生成TypeScript interface/type定义，递归遍历生成嵌套类型，数组→T[]、null→可选字段，根类型命名可配置 |
 | HTTP 状态码速查手册 | `/tools/http-status-codes` | 可视化展示60+个HTTP状态码（1xx-5xx），卡片布局，搜索过滤、分类切换，点击查看详细说明/常见场景/使用建议 |
+| 色盲模拟与无障碍检测器 | `/tools/color-blindness-simulator` | 基于Viénot算法模拟8种色盲类型（红色盲/绿色盲/蓝色盲/红色弱/绿色弱/蓝色弱/全色盲/三色觉正常），图片上传Canvas像素级变换，HEX颜色输入，WCAG AA/AAA对比度检测，批量颜色可辨识度检测 |
+| 经典密码编解码器 | `/tools/classic-cipher` | 凯撒密码（可调偏移量+暴力破解）/摩尔斯电码（国际标准码表+自定义分隔符）/维吉尼亚密码（密钥加密）/栅栏密码（可调栏数）/ROT13，Tab切换，加密解密双向 |
+| Lorem Ipsum 智能文本生成器 | `/tools/lorem-generator` | 英文Lorem Ipsum标准词库+中文随机段落，段落数/句子数/词数范围可调，可选Lorem开头，纯文本和HTML格式复制，预览模式 |
+| 随机数据表格生成器 | `/tools/fake-data-generator` | 11种字段类型（中文姓名/手机号/邮箱/地址/公司名/日期/金额/IP地址/URL/身份证号/职业），自定义字段增删，1-100行数据生成，表格展示，导出CSV和JSON |
 
 ## GitHub Actions 部署
 
