@@ -85,7 +85,10 @@ wildfire-station/
     ├── color-blindness-simulator.vue    # 色盲模拟与无障碍检测器
     ├── classic-cipher.vue               # 经典密码编解码器
     ├── lorem-generator.vue              # Lorem Ipsum 智能文本生成器
-    └── fake-data-generator.vue          # 随机数据表格生成器
+    ├── fake-data-generator.vue          # 随机数据表格生成器
+    ├── image-stitcher.vue               # 图片拼接工具
+    ├── unit-converter.vue               # 万能单位换算器
+    └── spaced-repetition.vue            # 间隔重复复习计划器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -157,6 +160,9 @@ wildfire-station/
 | 经典密码编解码器 | `/tools/classic-cipher` | 凯撒密码（可调偏移量+暴力破解）/摩尔斯电码（国际标准码表+自定义分隔符）/维吉尼亚密码（密钥加密）/栅栏密码（可调栏数）/ROT13，Tab切换，加密解密双向 |
 | Lorem Ipsum 智能文本生成器 | `/tools/lorem-generator` | 英文Lorem Ipsum标准词库+中文随机段落，段落数/句子数/词数范围可调，可选Lorem开头，纯文本和HTML格式复制，预览模式 |
 | 随机数据表格生成器 | `/tools/fake-data-generator` | 11种字段类型（中文姓名/手机号/邮箱/地址/公司名/日期/金额/IP地址/URL/身份证号/职业），自定义字段增删，1-100行数据生成，表格展示，导出CSV和JSON |
+| 图片拼接工具 | `/tools/image-stitcher` | 拖拽上传多图、4种布局（纵向/横向/2列/3列）、间距/圆角/背景色/质量可调、拖拽排序图片顺序、实时Canvas预览、一键导出PNG/JPG |
+| 万能单位换算器 | `/tools/unit-converter` | 7大分类（长度/重量/温度/面积/体积/速度/数据存储）100+单位、实时精确换算、快捷参考列表、温度特殊公式处理、中文显示+英文符号 |
+| 间隔重复复习计划器 | `/tools/spaced-repetition` | 3种间隔算法（艾宾浩斯/SuperMemo 2/Cepeda优化）、Canvas遗忘曲线图+复习节点标记、多科目管理、localStorage存储、今日待复习提醒 |
 
 ## GitHub Actions 部署
 
