@@ -396,6 +396,24 @@ const tools = [
     desc: '生成姓名/手机/邮箱/地址等模拟数据，表格展示，支持导出CSV和JSON',
     path: '/tools/fake-data-generator',
   },
+  {
+    icon: '🖼️',
+    name: '图片拼接工具',
+    desc: '多图拼接、拖拽排序、四种布局模式，参数可调，一键导出PNG/JPG',
+    path: '/tools/image-stitcher',
+  },
+  {
+    icon: '📐',
+    name: '万能单位换算器',
+    desc: '7大分类100+单位，长度/重量/温度/面积/体积/速度/数据存储实时换算',
+    path: '/tools/unit-converter',
+  },
+  {
+    icon: '🧠',
+    name: '间隔重复复习计划器',
+    desc: '艾宾浩斯/SuperMemo/Cepeda三种算法，遗忘曲线可视化，多科目管理',
+    path: '/tools/spaced-repetition',
+  },
 ]
 </script>
 
