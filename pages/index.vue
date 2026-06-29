@@ -348,6 +348,30 @@ const tools = [
     desc: '上传一张图，一键生成微信/抖音/小红书/X/Instagram等主流平台适配尺寸，批量下载',
     path: '/tools/multi-platform-size-adaptor',
   },
+  {
+    icon: '🔄',
+    name: '数据格式互转器',
+    desc: 'CSV/JSON/YAML/XML/Markdown表格互相转换，粘贴即转，支持文件拖拽上传和下载',
+    path: '/tools/data-format-converter',
+  },
+  {
+    icon: '🎨',
+    name: 'SQL 格式化与美化',
+    desc: '粘贴SQL自动格式化，关键字高亮，支持MySQL/PostgreSQL/SQLite方言，一键复制',
+    path: '/tools/sql-formatter',
+  },
+  {
+    icon: '🔷',
+    name: 'JSON/YAML转TypeScript',
+    desc: '粘贴JSON或YAML自动生成TypeScript interface/type定义，递归处理嵌套类型',
+    path: '/tools/json-to-typescript',
+  },
+  {
+    icon: '🌐',
+    name: 'HTTP 状态码速查',
+    desc: '可视化展示60+个HTTP状态码，按类别分组，搜索过滤，点击查看详细说明',
+    path: '/tools/http-status-codes',
+  },
 ]
 </script>
 
