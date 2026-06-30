@@ -414,6 +414,24 @@ const tools = [
     desc: '艾宾浩斯/SuperMemo/Cepeda三种算法，遗忘曲线可视化，多科目管理',
     path: '/tools/spaced-repetition',
   },
+  {
+    icon: '📦',
+    name: 'UTF-8 字节序列可视化查看器',
+    desc: '逐字符展示 Unicode 码点、UTF-8 字节序列、UTF-16 编码、HTML 实体，支持详细表格和紧凑视图',
+    path: '/tools/utf8-byte-viewer',
+  },
+  {
+    icon: '🌍',
+    name: '世界时钟与时区对比器',
+    desc: '30+主要城市，实时时钟+24小时时间轴+工作时间重叠区域标注，跨时区会议助手',
+    path: '/tools/world-clock',
+  },
+  {
+    icon: '🧩',
+    name: 'CSS Flexbox 可视化生成器',
+    desc: '交互式调节 Flex 属性，实时预览布局效果，8种预设模板，一键复制CSS和HTML',
+    path: '/tools/flexbox-generator',
+  },
 ]
 </script>
 
