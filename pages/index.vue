@@ -450,6 +450,24 @@ const tools = [
     desc: '分析密码安全性：连续/重复字符检测、弱密码库比对、暴力破解时间估算',
     path: '/tools/password-strength-checker',
   },
+  {
+    icon: '🔍',
+    name: 'UA 解析器',
+    desc: '解析 User-Agent 字符串，识别浏览器/操作系统/设备类型/渲染引擎，支持常见UA模板一键填入',
+    path: '/tools/ua-parser',
+  },
+  {
+    icon: '⭕',
+    name: 'SVG 环形图生成器',
+    desc: '单环进度条/多环饼图/仪表盘三种模式，颜色/宽度/动画可调，实时SVG预览，一键复制代码',
+    path: '/tools/svg-ring-chart',
+  },
+  {
+    icon: '🏷️',
+    name: 'Meta 标签生成器',
+    desc: '生成 SEO + Open Graph + Twitter Card 标签，实时预览微信/Facebook/Twitter/Discord 分享效果',
+    path: '/tools/meta-tag-generator',
+  },
 ]
 </script>
 
