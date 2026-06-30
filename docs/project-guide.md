@@ -88,7 +88,10 @@ wildfire-station/
     ├── fake-data-generator.vue          # 随机数据表格生成器
     ├── image-stitcher.vue               # 图片拼接工具
     ├── unit-converter.vue               # 万能单位换算器
-    └── spaced-repetition.vue            # 间隔重复复习计划器
+    ├── spaced-repetition.vue            # 间隔重复复习计划器
+    ├── utf8-byte-viewer.vue              # UTF-8 字节序列可视化查看器
+    ├── world-clock.vue                   # 世界时钟与时区对比器
+    └── flexbox-generator.vue            # CSS Flexbox 可视化生成器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -163,6 +166,9 @@ wildfire-station/
 | 图片拼接工具 | `/tools/image-stitcher` | 拖拽上传多图、4种布局（纵向/横向/2列/3列）、间距/圆角/背景色/质量可调、拖拽排序图片顺序、实时Canvas预览、一键导出PNG/JPG |
 | 万能单位换算器 | `/tools/unit-converter` | 7大分类（长度/重量/温度/面积/体积/速度/数据存储）100+单位、实时精确换算、快捷参考列表、温度特殊公式处理、中文显示+英文符号 |
 | 间隔重复复习计划器 | `/tools/spaced-repetition` | 3种间隔算法（艾宾浩斯/SuperMemo 2/Cepeda优化）、Canvas遗忘曲线图+复习节点标记、多科目管理、localStorage存储、今日待复习提醒 |
+| UTF-8 字节序列可视化查看器 | `/tools/utf8-byte-viewer` | 粘贴任意文本逐字符展示Unicode码点/十进制/UTF-8十六进制字节序列/UTF-16编码/HTML实体，详细表格+紧凑视图切换，统计字符数/字节数，一键复制单行或全部JSON |
+| 世界时钟与时区对比器 | `/tools/world-clock` | 30+主要城市按洲分组，可添加/删除最多8个城市，每秒更新时间+日期+时差，24小时时间轴可视化，工作时间9-18点重叠区域高亮，最佳会议时间推荐，Intl.DateTimeFormat API |
+| CSS Flexbox 可视化生成器 | `/tools/flexbox-generator` | Flex容器属性调节面板（direction/justify/align-items/wrap/content/gap），子项属性调节（grow/shrink/basis/order），8种预设布局模板（导航栏/侧边栏/卡片网格/居中/等分/底部固定/Holy Grail/输入按钮），2-8个子项可调，一键复制CSS和HTML |
 
 ## GitHub Actions 部署
 
