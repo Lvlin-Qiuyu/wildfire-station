@@ -432,6 +432,24 @@ const tools = [
     desc: '交互式调节 Flex 属性，实时预览布局效果，8种预设模板，一键复制CSS和HTML',
     path: '/tools/flexbox-generator',
   },
+  {
+    icon: '🔢',
+    name: '矩阵计算器',
+    desc: '矩阵加减乘、行列式、转置、逆矩阵运算，支持 2×2/3×3/4×4 维度切换',
+    path: '/tools/matrix-calculator',
+  },
+  {
+    icon: '📝',
+    name: '文本去重与排序',
+    desc: '多行文本一键去重、过滤空行、排序（升序/降序/随机打乱），实时统计',
+    path: '/tools/text-dedup-sorter',
+  },
+  {
+    icon: '🔒',
+    name: '密码强度检测器',
+    desc: '分析密码安全性：连续/重复字符检测、弱密码库比对、暴力破解时间估算',
+    path: '/tools/password-strength-checker',
+  },
 ]
 </script>
 
