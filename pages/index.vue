@@ -504,6 +504,18 @@ const tools = [
     desc: '输入文字选择字体风格，生成 ASCII 字符画，6种字体、5种字符集，一键复制下载',
     path: '/tools/ascii-art-generator',
   },
+  {
+    icon: '☁️',
+    name: '词云生成器',
+    desc: '输入文本自动统计词频，螺旋线布局生成词云，5种配色方案，支持导出PNG',
+    path: '/tools/word-cloud',
+  },
+  {
+    icon: '💍',
+    name: '戒指尺寸对照器',
+    desc: '中国/美国/英国/日本/欧盟戒圈码互转，纸条测量+内径测量两种方法，可视化对比',
+    path: '/tools/ring-size',
+  },
 ]
 </script>
 
