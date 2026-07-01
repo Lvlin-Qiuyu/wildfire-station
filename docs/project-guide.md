@@ -92,8 +92,11 @@ wildfire-station/
     ├── utf8-byte-viewer.vue              # UTF-8 字节序列可视化查看器
     ├── world-clock.vue                   # 世界时钟与时区对比器
     ├── flexbox-generator.vue            # CSS Flexbox 可视化生成器
+    ├── image-cropper.vue                 # 图片裁剪工具
+    ├── css-grid-generator.vue            # CSS Grid 可视化生成器
     ├── matrix-calculator.vue             # 矩阵计算器
     ├── text-dedup-sorter.vue             # 文本去重与排序工具
+    ├── math-calculator.vue               # 数学表达式计算器
     ├── password-strength-checker.vue      # 密码强度检测器
     ├── ua-parser.vue                      # UA 解析器
     ├── svg-ring-chart.vue                 # SVG 环形图生成器
@@ -178,8 +181,11 @@ wildfire-station/
 | UTF-8 字节序列可视化查看器 | `/tools/utf8-byte-viewer` | 粘贴任意文本逐字符展示Unicode码点/十进制/UTF-8十六进制字节序列/UTF-16编码/HTML实体，详细表格+紧凑视图切换，统计字符数/字节数，一键复制单行或全部JSON |
 | 世界时钟与时区对比器 | `/tools/world-clock` | 30+主要城市按洲分组，可添加/删除最多8个城市，每秒更新时间+日期+时差，24小时时间轴可视化，工作时间9-18点重叠区域高亮，最佳会议时间推荐，Intl.DateTimeFormat API |
 | CSS Flexbox 可视化生成器 | `/tools/flexbox-generator` | Flex容器属性调节面板（direction/justify/align-items/wrap/content/gap），子项属性调节（grow/shrink/basis/order），8种预设布局模板（导航栏/侧边栏/卡片网格/居中/等分/底部固定/Holy Grail/输入按钮），2-8个子项可调，一键复制CSS和HTML |
+| 图片裁剪工具 | `/tools/image-cropper` | 上传图片Canvas绘制，拖拽裁剪框+8方向手柄，7种预设比例（自由/1:1/4:3/3:2/16:9/2:3/9:16），三等分参考线，实时预览，PNG/JPG/WebP导出，质量可调，移动端触摸支持 |
+| CSS Grid 可视化生成器 | `/tools/css-grid-generator` | 行列数1-6可调，gap/justify-items/align-items，子项grid-column/grid-row跨度调节，grid-area命名+自动生成template-areas，6种预设（三栏/圣杯/仪表盘/相册/卡片/杂志），一键复制CSS和HTML |
 | 矩阵计算器 | `/tools/matrix-calculator` | 2×2/3×3/4×4维度切换，双矩阵表格输入（Tab键切换单元格），加法/减法/乘法/行列式（Laplace展开）/转置/逆矩阵（高斯-约旦消元法），行列式大字号展示，奇异矩阵提示，一键复制结果 |
 | 文本去重与排序 | `/tools/text-dedup-sorter` | 左右双栏实时处理，去重/过滤空行/去首尾空格/忽略大小写开关，升序/降序/随机打乱排序，统计面板（原始行数/处理后行数/删除行数/重复行数），一键复制结果 |
+| 数学表达式计算器 | `/tools/math-calculator` | 基础/科学双模式，12种科学函数（sin/cos/tan/ln/log/√/abs/!/exp/asin/acos/atan），常量（π/e/φ），角度写法（90°），隐式乘法，阶乘，键盘快捷键，历史记录localStorage持久化，表达式参考文档 |
 | 密码强度检测器 | `/tools/password-strength-checker` | 密码显示/隐藏，5级强度条渐变色可视化，评分详情（长度/大小写/数字/特殊字符/连续字符/重复字符/常见弱密码top50），暴力破解时间估算（GPU集群100亿次/秒），改进建议列表，纯JS实现 |
 | UA 解析器 | `/tools/ua-parser` | 自动检测当前浏览器UA或手动输入，纯JS正则解析浏览器/操作系统/设备类型/渲染引擎/平台信息，8种常见UA模板一键填入，UA字符串结构着色标注，复制解析结果JSON |
 | SVG 环形图生成器 | `/tools/svg-ring-chart` | 三种模式（单环进度条/多环饼图/仪表盘），颜色/渐变/环宽度/大小/动画时长/起始角度可调，多段数据增删改，实时SVG预览，SVG代码输出一键复制，纯JS计算零依赖 |
