@@ -241,6 +241,12 @@ const tools = [
     path: '/tools/encoding-converter',
   },
   {
+    icon: '✂️',
+    name: '图片裁剪工具',
+    desc: '上传图片自由拖拽裁剪区域，支持预设比例，实时预览并导出裁剪结果',
+    path: '/tools/image-cropper',
+  },
+  {
     icon: '📦',
     name: '图片压缩',
     desc: '拖拽上传，质量可调，前后对比，显示压缩率和文件大小变化',
@@ -428,9 +434,21 @@ const tools = [
   },
   {
     icon: '🧩',
+    name: 'CSS Grid 可视化生成器',
+    desc: '可视化创建 CSS Grid 布局，支持区域划分，6种预设模板，一键复制CSS和HTML',
+    path: '/tools/css-grid-generator',
+  },
+  {
+    icon: '🧩',
     name: 'CSS Flexbox 可视化生成器',
     desc: '交互式调节 Flex 属性，实时预览布局效果，8种预设模板，一键复制CSS和HTML',
     path: '/tools/flexbox-generator',
+  },
+  {
+    icon: '🔢',
+    name: '数学表达式计算器',
+    desc: '支持科学计算函数(sin/cos/ln/log)、常量(π/e/φ)、括号嵌套、历史记录',
+    path: '/tools/math-calculator',
   },
   {
     icon: '🔢',
