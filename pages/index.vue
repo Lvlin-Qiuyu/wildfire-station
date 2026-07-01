@@ -474,6 +474,18 @@ const tools = [
     desc: '输入名单，随机抽签/公平分组/加权随机，转盘动画展示结果',
     path: '/tools/random-picker',
   },
+  {
+    icon: '📸',
+    name: '图片 EXIF 元数据查看器',
+    desc: '拖拽上传图片，纯前端解析 EXIF 数据，查看相机型号、拍摄参数、GPS 坐标等',
+    path: '/tools/exif-viewer',
+  },
+  {
+    icon: '🔤',
+    name: 'ASCII 文字艺术生成器',
+    desc: '输入文字选择字体风格，生成 ASCII 字符画，6种字体、5种字符集，一键复制下载',
+    path: '/tools/ascii-art-generator',
+  },
 ]
 </script>
 
