@@ -468,6 +468,12 @@ const tools = [
     desc: '生成 SEO + Open Graph + Twitter Card 标签，实时预览微信/Facebook/Twitter/Discord 分享效果',
     path: '/tools/meta-tag-generator',
   },
+  {
+    icon: '🎰',
+    name: '随机抽签分组器',
+    desc: '输入名单，随机抽签/公平分组/加权随机，转盘动画展示结果',
+    path: '/tools/random-picker',
+  },
 ]
 </script>
 
