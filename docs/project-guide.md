@@ -103,7 +103,9 @@ wildfire-station/
     ├── meta-tag-generator.vue             # Meta 标签生成器
     ├── random-picker.vue                 # 随机抽签分组器
     ├── exif-viewer.vue                    # 图片 EXIF 元数据查看器
-    └── ascii-art-generator.vue            # ASCII 文字艺术生成器
+    ├── ascii-art-generator.vue            # ASCII 文字艺术生成器
+    ├── word-cloud.vue                     # 词云生成器
+    └── ring-size.vue                      # 戒指尺寸对照器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -193,6 +195,8 @@ wildfire-station/
 | 随机抽签分组器 | `/tools/random-picker` | Fisher-Yates洗牌+分组算法，三种模式（随机抽签/公平分组/加权随机），CSS转盘动画，自定义权重与组名，操作历史记录，纯前端无依赖 |
 | 图片 EXIF 元数据查看器 | `/tools/exif-viewer` | 拖拽/点击上传图片，纯前端 ArrayBuffer 解析 JPEG EXIF APP1 段，IFD 标签提取（相机/镜头/光圈/快门/ISO/GPS），Canvas 缩略图预览，GPS 坐标 Google Maps 链接，复制 JSON/纯文本，原始字节十六进制/文本预览 |
 | ASCII 文字艺术生成器 | `/tools/ascii-art-generator` | 6 种 ASCII 字体模板（Banner/Shadow/Mini/Block/Slant/Big），5 种字符集（标准/方块/点阵/简洁/星号），自定义输出宽度，支持 A-Z 和 0-9，实时预览，一键复制/下载 TXT |
+| 词云生成器 | `/tools/word-cloud` | 输入文本中英文自动分词统计词频（中文单字/双字/三字组合+英文空格分词），螺旋线放置算法Canvas绘制，5种配色方案/4种背景色/最大词数可调，词频柱状图，导出PNG |
+| 戒指尺寸对照器 | `/tools/ring-size` | 中国5-28码完整对照表（对应美国/英国/日本/欧盟），纸条量周长法和现有戒指量内径法两种指引，实时联动转换结果卡片，SVG戒圈可视化对比（前后相邻尺寸虚线参考），可搜索过滤对照表 |
 
 ## GitHub Actions 部署
 
