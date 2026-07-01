@@ -94,7 +94,11 @@ wildfire-station/
     ├── flexbox-generator.vue            # CSS Flexbox 可视化生成器
     ├── matrix-calculator.vue             # 矩阵计算器
     ├── text-dedup-sorter.vue             # 文本去重与排序工具
-    └── password-strength-checker.vue      # 密码强度检测器
+    ├── password-strength-checker.vue      # 密码强度检测器
+    ├── ua-parser.vue                      # UA 解析器
+    ├── svg-ring-chart.vue                 # SVG 环形图生成器
+    ├── meta-tag-generator.vue             # Meta 标签生成器
+    └── random-picker.vue                 # 随机抽签分组器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -178,6 +182,7 @@ wildfire-station/
 | UA 解析器 | `/tools/ua-parser` | 自动检测当前浏览器UA或手动输入，纯JS正则解析浏览器/操作系统/设备类型/渲染引擎/平台信息，8种常见UA模板一键填入，UA字符串结构着色标注，复制解析结果JSON |
 | SVG 环形图生成器 | `/tools/svg-ring-chart` | 三种模式（单环进度条/多环饼图/仪表盘），颜色/渐变/环宽度/大小/动画时长/起始角度可调，多段数据增删改，实时SVG预览，SVG代码输出一键复制，纯JS计算零依赖 |
 | Meta 标签生成器 | `/tools/meta-tag-generator` | 表单输入标题/描述/关键词/URL/图片等，实时预览微信/Facebook/Twitter/X/Discord 分享卡片样式，字符计数+最佳长度提示，生成完整Meta+OG+Twitter Card代码一键复制 |
+| 随机抽签分组器 | `/tools/random-picker` | Fisher-Yates洗牌+分组算法，三种模式（随机抽签/公平分组/加权随机），CSS转盘动画，自定义权重与组名，操作历史记录，纯前端无依赖 |
 
 ## GitHub Actions 部署
 
