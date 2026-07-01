@@ -98,7 +98,9 @@ wildfire-station/
     ├── ua-parser.vue                      # UA 解析器
     ├── svg-ring-chart.vue                 # SVG 环形图生成器
     ├── meta-tag-generator.vue             # Meta 标签生成器
-    └── random-picker.vue                 # 随机抽签分组器
+    ├── random-picker.vue                 # 随机抽签分组器
+    ├── exif-viewer.vue                    # 图片 EXIF 元数据查看器
+    └── ascii-art-generator.vue            # ASCII 文字艺术生成器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -183,6 +185,8 @@ wildfire-station/
 | SVG 环形图生成器 | `/tools/svg-ring-chart` | 三种模式（单环进度条/多环饼图/仪表盘），颜色/渐变/环宽度/大小/动画时长/起始角度可调，多段数据增删改，实时SVG预览，SVG代码输出一键复制，纯JS计算零依赖 |
 | Meta 标签生成器 | `/tools/meta-tag-generator` | 表单输入标题/描述/关键词/URL/图片等，实时预览微信/Facebook/Twitter/X/Discord 分享卡片样式，字符计数+最佳长度提示，生成完整Meta+OG+Twitter Card代码一键复制 |
 | 随机抽签分组器 | `/tools/random-picker` | Fisher-Yates洗牌+分组算法，三种模式（随机抽签/公平分组/加权随机），CSS转盘动画，自定义权重与组名，操作历史记录，纯前端无依赖 |
+| 图片 EXIF 元数据查看器 | `/tools/exif-viewer` | 拖拽/点击上传图片，纯前端 ArrayBuffer 解析 JPEG EXIF APP1 段，IFD 标签提取（相机/镜头/光圈/快门/ISO/GPS），Canvas 缩略图预览，GPS 坐标 Google Maps 链接，复制 JSON/纯文本，原始字节十六进制/文本预览 |
+| ASCII 文字艺术生成器 | `/tools/ascii-art-generator` | 6 种 ASCII 字体模板（Banner/Shadow/Mini/Block/Slant/Big），5 种字符集（标准/方块/点阵/简洁/星号），自定义输出宽度，支持 A-Z 和 0-9，实时预览，一键复制/下载 TXT |
 
 ## GitHub Actions 部署
 
