@@ -105,7 +105,10 @@ wildfire-station/
     ├── exif-viewer.vue                    # 图片 EXIF 元数据查看器
     ├── ascii-art-generator.vue            # ASCII 文字艺术生成器
     ├── word-cloud.vue                     # 词云生成器
-    └── ring-size.vue                      # 戒指尺寸对照器
+    ├── ring-size.vue                      # 戒指尺寸对照器
+    ├── quiz-maker.vue                     # 在线测验生成器
+    ├── totp-generator.vue                 # TOTP 验证码生成器
+    └── emoji-copywriter.vue               # Emoji 文案增强器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -197,6 +200,9 @@ wildfire-station/
 | ASCII 文字艺术生成器 | `/tools/ascii-art-generator` | 6 种 ASCII 字体模板（Banner/Shadow/Mini/Block/Slant/Big），5 种字符集（标准/方块/点阵/简洁/星号），自定义输出宽度，支持 A-Z 和 0-9，实时预览，一键复制/下载 TXT |
 | 词云生成器 | `/tools/word-cloud` | 输入文本中英文自动分词统计词频（中文单字/双字/三字组合+英文空格分词），螺旋线放置算法Canvas绘制，5种配色方案/4种背景色/最大词数可调，词频柱状图，导出PNG |
 | 戒指尺寸对照器 | `/tools/ring-size` | 中国5-28码完整对照表（对应美国/英国/日本/欧盟），纸条量周长法和现有戒指量内径法两种指引，实时联动转换结果卡片，SVG戒圈可视化对比（前后相邻尺寸虚线参考），可搜索过滤对照表 |
+| 在线测验生成器 | `/tools/quiz-maker` | 粘贴JSON格式题目生成交互式测验，支持单选/多选/判断题3种题型，点击选项答题，提交即时批改（✅❌标记每题），正确率环形图+进度条+逐题详情，localStorage存储进度，内置示例数据 |
+| TOTP 验证码生成器 | `/tools/totp-generator` | 纯JS实现RFC 6238（Web Crypto HMAC），输入Base32密钥实时生成6/8位一次性验证码，SVG圆环30秒倒计时动画自动刷新，支持SHA-1/256/512算法，一键复制 |
+| Emoji 文案增强器 | `/tools/emoji-copywriter` | 输入中文文案自动在关键词位置插入匹配Emoji，500+中文关键词→Emoji映射表，3种风格（自然30%/活泼60%/简约20%插入概率），6种场景模板，防抖实时增强，一键复制结果 |
 
 ## GitHub Actions 部署
 
