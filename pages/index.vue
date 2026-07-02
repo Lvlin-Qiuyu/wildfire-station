@@ -534,6 +534,24 @@ const tools = [
     desc: '输入中文文案自动插入匹配Emoji，500+映射，3种风格适配小红书/朋友圈/微博',
     path: '/tools/emoji-copywriter',
   },
+  {
+    icon: '🔄',
+    name: '多规则文本批量替换器',
+    desc: '支持多条查找替换规则（普通文本+正则），一键全部应用，高亮显示差异对比',
+    path: '/tools/text-replacer',
+  },
+  {
+    icon: '📋',
+    name: 'Markdown 大纲目录生成器',
+    desc: '粘贴Markdown文档自动解析标题层级生成嵌套目录TOC，支持GitHub/Notion/Hexo格式',
+    path: '/tools/markdown-toc',
+  },
+  {
+    icon: '🔢',
+    name: 'Base58/Base62 编解码器',
+    desc: 'Base58/Base58Check/Base62文本互转，比特币地址验证，CTF和区块链开发常用',
+    path: '/tools/base58-encoder',
+  },
 ]
 </script>
 
