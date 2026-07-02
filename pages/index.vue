@@ -552,6 +552,24 @@ const tools = [
     desc: 'Base58/Base58Check/Base62文本互转，比特币地址验证，CTF和区块链开发常用',
     path: '/tools/base58-encoder',
   },
+  {
+    icon: '🎨',
+    name: '颜色混合与插值器',
+    desc: '输入两个颜色选择色彩空间，自动生成中间渐变色序列，一键复制CSS渐变代码',
+    path: '/tools/color-blender',
+  },
+  {
+    icon: '%',
+    name: '百分比全能计算器',
+    desc: '一站式百分比计算：占比、增减、含税互算，实时公式展示',
+    path: '/tools/percentage-calculator',
+  },
+  {
+    icon: '🔗',
+    name: 'URL 解析与构建器',
+    desc: '粘贴URL自动拆解各部分，可编辑重建，查询参数增删改，导出JSON',
+    path: '/tools/url-parser',
+  },
 ]
 </script>
 
