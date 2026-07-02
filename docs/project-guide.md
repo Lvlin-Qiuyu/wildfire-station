@@ -108,7 +108,10 @@ wildfire-station/
     ├── ring-size.vue                      # 戒指尺寸对照器
     ├── quiz-maker.vue                     # 在线测验生成器
     ├── totp-generator.vue                 # TOTP 验证码生成器
-    └── emoji-copywriter.vue               # Emoji 文案增强器
+    ├── emoji-copywriter.vue               # Emoji 文案增强器
+    ├── text-replacer.vue                  # 多规则文本批量替换器
+    ├── markdown-toc.vue                   # Markdown 大纲目录生成器
+    └── base58-encoder.vue                 # Base58/Base62 编解码器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -203,6 +206,9 @@ wildfire-station/
 | 在线测验生成器 | `/tools/quiz-maker` | 粘贴JSON格式题目生成交互式测验，支持单选/多选/判断题3种题型，点击选项答题，提交即时批改（✅❌标记每题），正确率环形图+进度条+逐题详情，localStorage存储进度，内置示例数据 |
 | TOTP 验证码生成器 | `/tools/totp-generator` | 纯JS实现RFC 6238（Web Crypto HMAC），输入Base32密钥实时生成6/8位一次性验证码，SVG圆环30秒倒计时动画自动刷新，支持SHA-1/256/512算法，一键复制 |
 | Emoji 文案增强器 | `/tools/emoji-copywriter` | 输入中文文案自动在关键词位置插入匹配Emoji，500+中文关键词→Emoji映射表，3种风格（自然30%/活泼60%/简约20%插入概率），6种场景模板，防抖实时增强，一键复制结果 |
+| 多规则文本批量替换器 | `/tools/text-replacer` | 添加多条查找替换规则（普通文本+正则表达式），支持大小写敏感/全词匹配，一键全部应用，逐字符差异高亮对比显示，复制结果 |
+| Markdown 大纲目录生成器 | `/tools/markdown-toc` | 粘贴Markdown文档自动解析 #~###### 各级标题，生成嵌套目录TOC，4种格式（GitHub锚点/Notion/Hexo/纯文本），4种缩进方式，最大层级控制，复制+下载 |
+| Base58/Base62 编解码器 | `/tools/base58-encoder` | 纯JS BigInt实现Base58/Base58Check/Base62编解码，纯JS SHA-256用于校验和，比特币P2PKH/P2SH地址验证，三种模式切换 |
 
 ## GitHub Actions 部署
 
