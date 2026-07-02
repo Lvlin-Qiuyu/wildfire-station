@@ -516,6 +516,24 @@ const tools = [
     desc: '中国/美国/英国/日本/欧盟戒圈码互转，纸条测量+内径测量两种方法，可视化对比',
     path: '/tools/ring-size',
   },
+  {
+    icon: '📝',
+    name: '在线测验生成器',
+    desc: '粘贴JSON题目生成交互式测验，支持单选/多选/判断题，即时批改并统计正确率',
+    path: '/tools/quiz-maker',
+  },
+  {
+    icon: '🔐',
+    name: 'TOTP 验证码生成器',
+    desc: '输入Base32密钥实时生成6/8位验证码，30秒倒计时动画，支持多种哈希算法',
+    path: '/tools/totp-generator',
+  },
+  {
+    icon: '😀',
+    name: 'Emoji 文案增强器',
+    desc: '输入中文文案自动插入匹配Emoji，500+映射，3种风格适配小红书/朋友圈/微博',
+    path: '/tools/emoji-copywriter',
+  },
 ]
 </script>
 
