@@ -445,10 +445,22 @@ const tools = [
     path: '/tools/flexbox-generator',
   },
   {
+    icon: '📈',
+    name: '函数图像绘制器',
+    desc: '输入数学表达式Canvas实时绘制曲线，支持多函数叠加、缩放平移、导数可视化',
+    path: '/tools/function-plotter',
+  },
+  {
     icon: '🔢',
     name: '数学表达式计算器',
     desc: '支持科学计算函数(sin/cos/ln/log)、常量(π/e/φ)、括号嵌套、历史记录',
     path: '/tools/math-calculator',
+  },
+  {
+    icon: '🌐',
+    name: 'CIDR 子网计算器',
+    desc: '输入IP和CIDR前缀，计算网络/广播/掩码/主机数，可视化地址空间和子网拆分',
+    path: '/tools/cidr-calculator',
   },
   {
     icon: '🔢',
