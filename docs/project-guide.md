@@ -114,7 +114,9 @@ wildfire-station/
     ├── base58-encoder.vue                 # Base58/Base62 编解码器
     ├── color-blender.vue                  # 颜色混合与插值器
     ├── percentage-calculator.vue          # 百分比全能计算器
-    └── url-parser.vue                     # URL 解析与构建器
+    ├── url-parser.vue                     # URL 解析与构建器
+    ├── function-plotter.vue              # 函数图像绘制器
+    └── cidr-calculator.vue               # CIDR 子网计算器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -215,6 +217,8 @@ wildfire-station/
 | 颜色混合与插值器 | `/tools/color-blender` | RGB/HSL/HSV三种色彩空间线性插值，2-20步可调，Canvas色板预览，点击复制HEX，一键复制CSS渐变代码 |
 | 百分比全能计算器 | `/tools/percentage-calculator` | 4种模式：X是Y的百分之几、X的百分之N是多少、百分比增减、含税/不含税互算，实时计算+公式展示 |
 | URL 解析与构建器 | `/tools/url-parser` | 自动拆解URL结构（协议/域名/端口/路径/参数/锚点），各部分可编辑重建，查询参数增删改，JSON导出 |
+| 函数图像绘制器 | `/tools/function-plotter` | 输入数学表达式Canvas实时绘制函数曲线，支持多函数叠加、缩放平移、导数可视化、坐标网格、鼠标拖拽 |
+| CIDR 子网计算器 | `/tools/cidr-calculator` | 输入IP地址和CIDR前缀，计算网络/广播/掩码/通配符/可用主机数，Canvas可视化地址空间，子网拆分，常用前缀参考表 |
 
 ## GitHub Actions 部署
 
