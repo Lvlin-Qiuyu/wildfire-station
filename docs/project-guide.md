@@ -121,7 +121,12 @@ wildfire-station/
     ├── image-filters.vue                # 图片滤镜与调色工具
     ├── image-pixelate.vue               # 图片马赛克/像素化工具
     ├── audio-visualizer.vue            # 音频波形可视化工具
-    └── audio-bpm-detector.vue          # 音频BPM检测器
+    ├── audio-bpm-detector.vue          # 音频BPM检测器
+    ├── statistics-calculator.vue       # 在线描述性统计计算器
+    ├── scatter-plot-regression.vue     # 散点图与回归分析工具
+    ├── loan-amortization.vue           # 还款计划表生成器
+    ├── code-card-generator.vue         # 代码片段格式化与分享工具
+    └── html-playground.vue             # HTML实时预览沙盒
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -229,6 +234,11 @@ wildfire-station/
 | 图片马赛克/像素化工具 | `/tools/image-pixelate` | 全局马赛克（块大小1-50px可调）+区域涂抹模式（笔刷大小/粒度可调），Canvas像素采样取平均色填充，鼠标/触摸涂抹，导出PNG/JPG |
 | 音频波形可视化工具 | `/tools/audio-visualizer` | Web Audio API离线解码，Canvas波形图（时域）+频谱图（频域），播放/暂停/停止/进度跳转，音量控制，0.5x-2x倍速，鼠标悬浮显示时间+振幅 |
 | 音频BPM检测器 | `/tools/audio-bpm-detector` | Web Audio API离线解码+能量包络自相关算法，60-200 BPM范围检测，置信度评估，波形图节拍标注，节奏分类标签，手动TAP敲击校准（空格键），复制结果 |
+| 描述性统计计算器 | `/tools/statistics-calculator` | 输入数据自动计算均值/中位数/众数/标准差/方差/极差/四分位数/偏度/峰度/几何平均，Canvas频率分布直方图+箱线图可视化，支持CSV粘贴，复制纯文本/JSON |
+| 散点图与回归分析工具 | `/tools/scatter-plot-regression` | X/Y两组数据输入绘制散点图Canvas，5种回归拟合（线性/多项式/指数/对数/幂函数），最小二乘法+高斯消元法，R²/RMSE统计，预测功能，数据表含残差分析，下载图表 |
+| 还款计划表生成器 | `/tools/loan-amortization` | 等额本息/等额本金双模式，提前还款节点插入后重算剩余计划，月度明细表（期数/月供/本金/利息/剩余本金），Canvas堆叠面积图本金利息占比，导出CSV，复制汇总 |
+| 代码片段格式化与分享工具 | `/tools/code-card-generator` | 粘贴代码自动语法高亮（关键字/字符串/注释/数字/函数），6种主题配色（One Dark/Dracula/GitHub/Monokai/Solarized/Nord），Canvas生成带行号和macOS风格标题栏的代码卡片图片，圆角/内边距可调，下载PNG |
+| HTML 实时预览沙盒 | `/tools/html-playground` | HTML/CSS/JS三分栏编辑器+iframe srcdoc实时预览，5种预设模板（空白/卡片/表格/动画/表单），全屏预览，URL hash编码分享代码，下载完整HTML文件 |
 
 ## GitHub Actions 部署
 
