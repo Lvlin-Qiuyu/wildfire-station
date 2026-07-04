@@ -126,7 +126,12 @@ wildfire-station/
     ├── scatter-plot-regression.vue     # 散点图与回归分析工具
     ├── loan-amortization.vue           # 还款计划表生成器
     ├── code-card-generator.vue         # 代码片段格式化与分享工具
-    └── html-playground.vue             # HTML实时预览沙盒
+    ├── html-playground.vue             # HTML实时预览沙盒
+    ├── complex-calculator.vue           # 复数运算计算器
+    ├── css-animation-generator.vue      # CSS关键帧动画生成器
+    ├── responsive-preview.vue          # 响应式断点测试器
+    ├── text-template.vue               # 文本变量替换与模板生成器
+    └── typing-test.vue                 # 打字速度测试器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -239,6 +244,11 @@ wildfire-station/
 | 还款计划表生成器 | `/tools/loan-amortization` | 等额本息/等额本金双模式，提前还款节点插入后重算剩余计划，月度明细表（期数/月供/本金/利息/剩余本金），Canvas堆叠面积图本金利息占比，导出CSV，复制汇总 |
 | 代码片段格式化与分享工具 | `/tools/code-card-generator` | 粘贴代码自动语法高亮（关键字/字符串/注释/数字/函数），6种主题配色（One Dark/Dracula/GitHub/Monokai/Solarized/Nord），Canvas生成带行号和macOS风格标题栏的代码卡片图片，圆角/内边距可调，下载PNG |
 | HTML 实时预览沙盒 | `/tools/html-playground` | HTML/CSS/JS三分栏编辑器+iframe srcdoc实时预览，5种预设模板（空白/卡片/表格/动画/表单），全屏预览，URL hash编码分享代码，下载完整HTML文件 |
+| 复数运算计算器 | `/tools/complex-calculator` | 复数加减乘除/共轭运算，极坐标表示（模/幅角），Canvas复平面可视化向量绘制，快捷输入预设值，计算历史记录 |
+| CSS关键帧动画生成器 | `/tools/css-animation-generator` | 可视化关键帧编辑（位移/缩放/旋转/透明度/圆角/背景色），7种属性调节，7种预设模板（弹跳/淡入/脉冲/旋转/抖动/滑入/变形），实时预览+暂停/重播，一键复制@keyframes CSS |
+| 响应式断点测试器 | `/tools/responsive-preview` | iframe嵌套加载URL或HTML代码，6种预设设备断点（iPhone/iPad/笔记本/桌面），滑块+拖拽手柄调整宽度320-1920px，Bootstrap媒体查询断点状态实时显示 |
+| 文本变量替换与模板生成器 | `/tools/text-template` | Mustache风格{{变量}}模板解析，多变量多值定义，笛卡尔积批量生成，内置变量（序号/日期），一键复制全部/单条，自定义文本支持 |
+| 打字速度测试器 | `/tools/typing-test` | 中英文文本库切换，30/60/120秒时长选择，实时WPM和准确率统计，逐字符正确/错误高亮，localStorage历史最佳记录，自定义文本支持 |
 
 ## GitHub Actions 部署
 
