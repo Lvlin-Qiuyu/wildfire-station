@@ -582,6 +582,36 @@ const tools = [
     desc: '粘贴URL自动拆解各部分，可编辑重建，查询参数增删改，导出JSON',
     path: '/tools/url-parser',
   },
+  {
+    icon: '📋',
+    name: '多文件文本批量对比器',
+    desc: '支持3个以上文本并行对比，高亮差异行、公共行、独有行，一键定位改动',
+    path: '/tools/multi-text-diff',
+  },
+  {
+    icon: '🎨',
+    name: '图片滤镜与调色工具',
+    desc: '多种预设滤镜（灰度/怀旧/反色），手动调节亮度/对比度/饱和度/色温，导出PNG/JPG',
+    path: '/tools/image-filters',
+  },
+  {
+    icon: '🧱',
+    name: '图片马赛克/像素化工具',
+    desc: '调节像素化程度生成马赛克，支持全局或区域涂抹遮挡，导出PNG/JPG',
+    path: '/tools/image-pixelate',
+  },
+  {
+    icon: '🎧',
+    name: '音频波形可视化工具',
+    desc: '上传音频显示波形图和频谱图，播放/暂停/跳转，鼠标悬浮显示振幅值',
+    path: '/tools/audio-visualizer',
+  },
+  {
+    icon: '🥁',
+    name: '音频BPM检测器',
+    desc: '自动检测BPM（每分钟节拍数），波形标注节拍点，手动TAP敲击校准',
+    path: '/tools/audio-bpm-detector',
+  },
 ]
 </script>
 
