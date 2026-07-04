@@ -19,7 +19,8 @@
       <div class="url-bar" style="margin-top: 0.5rem;">
         <span class="url-icon">📝</span>
         <input
-          v-model="isCustomHtml ? customHtml : ''"
+          :value="isCustomHtml ? customHtml : ''"
+          @input="isCustomHtml ? customHtml = $event.target.value : null"
           class="url-input"
           :placeholder="isCustomHtml ? '在此输入 HTML 代码...' : '或切换到 HTML 模式输入代码'"
           :readonly="!isCustomHtml"
