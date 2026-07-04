@@ -226,6 +226,7 @@ function removeKeyframe(index) {
 
 // 重播动画
 function restartAnimation() {
+  if (!import.meta.client) return
   const el = document.querySelector('.preview-element')
   if (el) {
     el.style.animation = 'none'
@@ -307,6 +308,7 @@ function applyPreset(name) {
 // 注入动态 keyframes 样式
 const styleEl = ref(null)
 watch(keyframesCSS, (css) => {
+  if (!import.meta.client) return
   if (styleEl.value) styleEl.value.remove()
   styleEl.value = document.createElement('style')
   styleEl.value.textContent = css
