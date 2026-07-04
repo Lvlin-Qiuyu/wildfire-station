@@ -116,7 +116,12 @@ wildfire-station/
     ├── percentage-calculator.vue          # 百分比全能计算器
     ├── url-parser.vue                     # URL 解析与构建器
     ├── function-plotter.vue              # 函数图像绘制器
-    └── cidr-calculator.vue               # CIDR 子网计算器
+    ├── cidr-calculator.vue               # CIDR 子网计算器
+    ├── multi-text-diff.vue              # 多文件文本批量对比器
+    ├── image-filters.vue                # 图片滤镜与调色工具
+    ├── image-pixelate.vue               # 图片马赛克/像素化工具
+    ├── audio-visualizer.vue            # 音频波形可视化工具
+    └── audio-bpm-detector.vue          # 音频BPM检测器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -219,6 +224,11 @@ wildfire-station/
 | URL 解析与构建器 | `/tools/url-parser` | 自动拆解URL结构（协议/域名/端口/路径/参数/锚点），各部分可编辑重建，查询参数增删改，JSON导出 |
 | 函数图像绘制器 | `/tools/function-plotter` | 输入数学表达式Canvas实时绘制函数曲线，支持多函数叠加、缩放平移、导数可视化、坐标网格、鼠标拖拽 |
 | CIDR 子网计算器 | `/tools/cidr-calculator` | 输入IP地址和CIDR前缀，计算网络/广播/掩码/通配符/可用主机数，Canvas可视化地址空间，子网拆分，常用前缀参考表 |
+| 多文件文本批量对比器 | `/tools/multi-text-diff` | 支持3+版本文本并行对比，高亮各版本独有行/公共行/差异行，统计信息面板，一键复制结果/HTML，自动防抖对比 |
+| 图片滤镜与调色工具 | `/tools/image-filters` | 10种预设滤镜（原图/灰度/怀旧/反色/暖色/冷色/高对比/柔焦/戏剧/褪色），6参数手动调节（亮度/对比度/饱和度/色温/模糊/锐化），像素级操作+卷积核锐化，原图对比，导出PNG/JPG |
+| 图片马赛克/像素化工具 | `/tools/image-pixelate` | 全局马赛克（块大小1-50px可调）+区域涂抹模式（笔刷大小/粒度可调），Canvas像素采样取平均色填充，鼠标/触摸涂抹，导出PNG/JPG |
+| 音频波形可视化工具 | `/tools/audio-visualizer` | Web Audio API离线解码，Canvas波形图（时域）+频谱图（频域），播放/暂停/停止/进度跳转，音量控制，0.5x-2x倍速，鼠标悬浮显示时间+振幅 |
+| 音频BPM检测器 | `/tools/audio-bpm-detector` | Web Audio API离线解码+能量包络自相关算法，60-200 BPM范围检测，置信度评估，波形图节拍标注，节奏分类标签，手动TAP敲击校准（空格键），复制结果 |
 
 ## GitHub Actions 部署
 
