@@ -612,6 +612,36 @@ const tools = [
     desc: '自动检测BPM（每分钟节拍数），波形标注节拍点，手动TAP敲击校准',
     path: '/tools/audio-bpm-detector',
   },
+  {
+    icon: '📊',
+    name: '描述性统计计算器',
+    desc: '输入一组数据自动计算均值/中位数/标准差/偏度/峰度等，直方图和箱线图可视化',
+    path: '/tools/statistics-calculator',
+  },
+  {
+    icon: '📈',
+    name: '散点图与回归分析',
+    desc: '绘制散点图，自动拟合线性/多项式/指数/对数/幂函数回归，显示方程和R²值',
+    path: '/tools/scatter-plot-regression',
+  },
+  {
+    icon: '💰',
+    name: '还款计划表生成器',
+    desc: '等额本息/等额本金还款计划，支持提前还款模拟，可视化本金利息占比，导出CSV',
+    path: '/tools/loan-amortization',
+  },
+  {
+    icon: '📋',
+    name: '代码卡片生成器',
+    desc: '粘贴代码自动语法高亮，生成带行号和主题色的精美代码卡片图片，6种配色主题',
+    path: '/tools/code-card-generator',
+  },
+  {
+    icon: '🌐',
+    name: 'HTML 实时预览沙盒',
+    desc: 'HTML/CSS/JS代码实时预览，5种预设模板，全屏预览，代码分享链接',
+    path: '/tools/html-playground',
+  },
 ]
 </script>
 
