@@ -642,6 +642,36 @@ const tools = [
     desc: 'HTML/CSS/JS代码实时预览，5种预设模板，全屏预览，代码分享链接',
     path: '/tools/html-playground',
   },
+  {
+    icon: '🔢',
+    name: '复数运算计算器',
+    desc: '复数加减乘除、共轭、模/幅角计算，直角坐标与极坐标互转，复平面可视化',
+    path: '/tools/complex-calculator',
+  },
+  {
+    icon: '🎬',
+    name: 'CSS关键帧动画生成器',
+    desc: '可视化创建@keyframes动画，拖拽关键帧、调节属性、实时预览，一键生成CSS代码',
+    path: '/tools/css-animation-generator',
+  },
+  {
+    icon: '📱',
+    name: '响应式断点测试器',
+    desc: '不同屏幕尺寸下预览网页效果，预设设备断点、可拖拽调整宽度、媒体查询状态显示',
+    path: '/tools/responsive-preview',
+  },
+  {
+    icon: '📝',
+    name: '文本变量替换与模板生成器',
+    desc: '定义变量和模板批量生成个性化文本，支持序号递增和日期插入，笛卡尔积组合',
+    path: '/tools/text-template',
+  },
+  {
+    icon: '⌨️',
+    name: '打字速度测试器',
+    desc: '中英文打字测试，计时统计WPM/准确率/错误数，实时高亮正确错误字符，历史最佳记录',
+    path: '/tools/typing-test',
+  },
 ]
 </script>
 
