@@ -40,7 +40,7 @@
           </div>
           <div class="built-in-vars">
             <span class="built-in-label">内置变量：</span>
-            <code v-for="b in builtInVars" :key="b" class="built-in-tag" @click="insertBuiltIn(b)">{{ '{{' + b + '}}' }}</code>
+            <code v-for="(b, idx) in builtInVars" :key="idx" class="built-in-tag" @click="insertBuiltIn(b)">{{ wrapVar(b) }}</code>
           </div>
         </div>
 
@@ -125,6 +125,11 @@ const builtInVars = ['序号', 'date', 'datetime', 'year', 'month', 'day']
 const effectiveVarCount = computed(() => {
   return variables.filter(v => v.values.some(val => val.trim())).length
 })
+
+// 包裹变量名为模板标签
+function wrapVar(name) {
+  return '{' + '{' + name + '}' + '}'
+}
 
 // 添加变量
 function addVariable() {
