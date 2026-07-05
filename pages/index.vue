@@ -690,6 +690,30 @@ const tools = [
     desc: '自动在中英文间插入空格、修正中英文标点全半角、括号配对修正，支持自定义规则',
     path: '/tools/zh-en-text-fixer',
   },
+  {
+    icon: '🎨',
+    name: '色彩和谐度分析器',
+    desc: '输入多个颜色分析色彩和谐度，Canvas色轮可视化，匹配互补/类比/三色等模式并评分',
+    path: '/tools/color-harmony-analyzer',
+  },
+  {
+    icon: '🎓',
+    name: '费曼学习法笔记',
+    desc: '四步引导式笔记（概念→简化→类比→缺口），实时Markdown预览，localStorage草稿保存',
+    path: '/tools/feynman-notes',
+  },
+  {
+    icon: '🧠',
+    name: '知识图谱绘制器',
+    desc: '节点拖拽+连线交互，Canvas可视化，多种模式操作，导出JSON和PNG',
+    path: '/tools/knowledge-graph',
+  },
+  {
+    icon: '🚫',
+    name: '违禁词检测器',
+    desc: '多平台违禁词库检测，分类高亮标记，一键自动替换高风险词，安全评分',
+    path: '/tools/banned-word-checker',
+  },
 ]
 </script>
 
