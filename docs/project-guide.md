@@ -131,7 +131,10 @@ wildfire-station/
     ├── css-animation-generator.vue      # CSS关键帧动画生成器
     ├── responsive-preview.vue          # 响应式断点测试器
     ├── text-template.vue               # 文本变量替换与模板生成器
-    └── typing-test.vue                 # 打字速度测试器
+    ├── typing-test.vue                 # 打字速度测试器
+    ├── hmac-generator.vue             # HMAC签名生成器
+    ├── header-builder.vue              # HTTP请求头构造器
+    └── zh-en-text-fixer.vue            # 中英文混排优化器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -249,6 +252,9 @@ wildfire-station/
 | 响应式断点测试器 | `/tools/responsive-preview` | iframe嵌套加载URL或HTML代码，6种预设设备断点（iPhone/iPad/笔记本/桌面），滑块+拖拽手柄调整宽度320-1920px，Bootstrap媒体查询断点状态实时显示 |
 | 文本变量替换与模板生成器 | `/tools/text-template` | Mustache风格{{变量}}模板解析，多变量多值定义，笛卡尔积批量生成，内置变量（序号/日期），一键复制全部/单条，自定义文本支持 |
 | 打字速度测试器 | `/tools/typing-test` | 中英文文本库切换，30/60/120秒时长选择，实时WPM和准确率统计，逐字符正确/错误高亮，localStorage历史最佳记录，自定义文本支持 |
+| HMAC 签名生成器 | `/tools/hmac-generator` | Web Crypto API 生成 HMAC-SHA256/SHA1/SHA512 签名，Hex/Base64 双格式输出，一键复制，密钥和消息本地处理 |
+| HTTP 请求头构造器 | `/tools/header-builder` | 8种预设请求头模板（CORS/Authorization/Cache等），自定义 Header 键值对，一键生成 curl/Fetch/Axios 代码片段 |
+| 中英文混排优化器 | `/tools/zh-en-text-fixer` | 自动中英文间插入空格，中文标点转全角/英文标点转半角，括号配对修正，自定义替换规则，实时预览+一键复制 |
 
 ## GitHub Actions 部署
 
