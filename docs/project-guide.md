@@ -139,6 +139,9 @@ wildfire-station/
     ├── feynman-notes.vue               # 费曼学习法笔记
     ├── knowledge-graph.vue             # 知识图谱绘制器
     └── banned-word-checker.vue         # 违禁词检测器
+    ├── holiday-calendar.vue            # 节假日日历查看器
+    ├── age-calculator.vue              # 年龄精确计算器
+    └── toml-converter.vue              # TOML/INI配置转换器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -263,6 +266,9 @@ wildfire-station/
 | 费曼学习法笔记 | `/tools/feynman-notes` | 四步引导式笔记（概念解释→简化→类比→知识缺口），步骤进度条，localStorage草稿保存，Markdown预览+导出 |
 | 知识图谱绘制器 | `/tools/knowledge-graph` | Canvas节点拖拽+带箭头连线，添加/连线/移动/删除四种模式，8种节点颜色，自动圆形布局，导出JSON和PNG |
 | 违禁词检测器 | `/tools/banned-word-checker` | 内置50+违禁词词条（极限词/价格违规/虚假宣传/引流违规等），红黄蓝三色高亮，四平台规则，一键替换，安全评分 |
+| 节假日日历查看器 | `/tools/holiday-calendar` | 2025-2027年中国法定节假日和调休数据，月历三色标记（🟢假期🔴补班🟡调休），全年汇总统计 |
+| 年龄精确计算器 | `/tools/age-calculator` | 精确到秒实时跳动计时，趣味统计（已活天数/心跳/呼吸），生日倒计时+人生进度条（假设80岁） |
+| TOML/INI配置转换器 | `/tools/toml-converter` | 自研轻量TOML/INI解析器，TOML↔JSON、INI↔JSON四种转换，预设示例模板，错误提示+一键复制 |
 
 ## GitHub Actions 部署
 
