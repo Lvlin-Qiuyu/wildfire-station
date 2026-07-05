@@ -672,6 +672,24 @@ const tools = [
     desc: '中英文打字测试，计时统计WPM/准确率/错误数，实时高亮正确错误字符，历史最佳记录',
     path: '/tools/typing-test',
   },
+  {
+    icon: '🔐',
+    name: 'HMAC 签名生成器',
+    desc: '输入消息和密钥，生成 HMAC-SHA256/SHA1/SHA512 签名，支持 Hex 和 Base64 输出格式',
+    path: '/tools/hmac-generator',
+  },
+  {
+    icon: '📋',
+    name: 'HTTP 请求头构造器',
+    desc: '可视化构造 HTTP 请求头，8种预设模板，一键生成 curl/Fetch/Axios 代码',
+    path: '/tools/header-builder',
+  },
+  {
+    icon: '🔤',
+    name: '中英文混排优化器',
+    desc: '自动在中英文间插入空格、修正中英文标点全半角、括号配对修正，支持自定义规则',
+    path: '/tools/zh-en-text-fixer',
+  },
 ]
 </script>
 
