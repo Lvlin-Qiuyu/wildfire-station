@@ -714,6 +714,24 @@ const tools = [
     desc: '多平台违禁词库检测，分类高亮标记，一键自动替换高风险词，安全评分',
     path: '/tools/banned-word-checker',
   },
+  {
+    icon: '🗓️',
+    name: '节假日日历查看器',
+    desc: '中国法定节假日和调休安排，月历标记假期/补班/调休，全年汇总统计',
+    path: '/tools/holiday-calendar',
+  },
+  {
+    icon: '🎂',
+    name: '年龄精确计算器',
+    desc: '精确到秒实时跳动，趣味统计已活天数/心跳/呼吸，生日倒计时+人生进度条',
+    path: '/tools/age-calculator',
+  },
+  {
+    icon: '📋',
+    name: 'TOML/INI 配置转换器',
+    desc: 'TOML/INI/JSON互转，自研轻量解析器，预设示例模板，错误提示',
+    path: '/tools/toml-converter',
+  },
 ]
 </script>
 
