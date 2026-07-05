@@ -135,6 +135,10 @@ wildfire-station/
     ├── hmac-generator.vue             # HMAC签名生成器
     ├── header-builder.vue              # HTTP请求头构造器
     └── zh-en-text-fixer.vue            # 中英文混排优化器
+    ├── color-harmony-analyzer.vue      # 色彩和谐度分析器
+    ├── feynman-notes.vue               # 费曼学习法笔记
+    ├── knowledge-graph.vue             # 知识图谱绘制器
+    └── banned-word-checker.vue         # 违禁词检测器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -255,6 +259,10 @@ wildfire-station/
 | HMAC 签名生成器 | `/tools/hmac-generator` | Web Crypto API 生成 HMAC-SHA256/SHA1/SHA512 签名，Hex/Base64 双格式输出，一键复制，密钥和消息本地处理 |
 | HTTP 请求头构造器 | `/tools/header-builder` | 8种预设请求头模板（CORS/Authorization/Cache等），自定义 Header 键值对，一键生成 curl/Fetch/Axios 代码片段 |
 | 中英文混排优化器 | `/tools/zh-en-text-fixer` | 自动中英文间插入空格，中文标点转全角/英文标点转半角，括号配对修正，自定义替换规则，实时预览+一键复制 |
+| 色彩和谐度分析器 | `/tools/color-harmony-analyzer` | 输入多颜色分析色彩和谐度，Canvas色轮可视化，匹配互补/类比/三色/分裂互补/四色/单色系模式，综合评分+搭配预览 |
+| 费曼学习法笔记 | `/tools/feynman-notes` | 四步引导式笔记（概念解释→简化→类比→知识缺口），步骤进度条，localStorage草稿保存，Markdown预览+导出 |
+| 知识图谱绘制器 | `/tools/knowledge-graph` | Canvas节点拖拽+带箭头连线，添加/连线/移动/删除四种模式，8种节点颜色，自动圆形布局，导出JSON和PNG |
+| 违禁词检测器 | `/tools/banned-word-checker` | 内置50+违禁词词条（极限词/价格违规/虚假宣传/引流违规等），红黄蓝三色高亮，四平台规则，一键替换，安全评分 |
 
 ## GitHub Actions 部署
 
