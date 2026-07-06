@@ -144,6 +144,10 @@ wildfire-station/
     ├── holiday-calendar.vue            # 节假日日历查看器
     ├── age-calculator.vue              # 年龄精确计算器
     └── toml-converter.vue              # TOML/INI配置转换器
+    ├── geometry-calculator.vue         # 几何计算器
+    ├── permutation-combination.vue     # 排列组合计算器
+    ├── css-theme-generator.vue         # CSS变量主题生成器
+    └── work-hours-calculator.vue       # 工时与加班计算器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -273,6 +277,10 @@ wildfire-station/
 | 节假日日历查看器 | `/tools/holiday-calendar` | 2025-2027年中国法定节假日和调休数据，月历三色标记（🟢假期🔴补班🟡调休），全年汇总统计 |
 | 年龄精确计算器 | `/tools/age-calculator` | 精确到秒实时跳动计时，趣味统计（已活天数/心跳/呼吸），生日倒计时+人生进度条（假设80岁） |
 | TOML/INI配置转换器 | `/tools/toml-converter` | 自研轻量TOML/INI解析器，TOML↔JSON、INI↔JSON四种转换，预设示例模板，错误提示+一键复制 |
+| 几何计算器 | `/tools/geometry-calculator` | 6种图形（圆形/矩形/三角形/球体/圆柱/圆锥），面积/周长/体积/表面积计算，Canvas可视化预览 |
+| 排列组合计算器 | `/tools/permutation-combination` | 排列A(n,m)/组合C(n,m)/可重复排列组合，BigInt精确计算大数，杨辉三角Canvas可视化 |
+| CSS变量主题生成器 | `/tools/css-theme-generator` | 13+预设颜色变量，自定义扩展，明暗双主题切换，组件实时预览（按钮/卡片/表单/Alert），一键生成CSS代码下载 |
+| 工时与加班计算器 | `/tools/work-hours-calculator` | 上下班时间+午休，日/周/月统计，标准工时对比，加班费估算，Canvas柱状图可视化 |
 
 ## GitHub Actions 部署
 
