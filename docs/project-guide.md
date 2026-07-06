@@ -88,6 +88,7 @@ wildfire-station/
     ├── fake-data-generator.vue          # 随机数据表格生成器
     ├── image-stitcher.vue               # 图片拼接工具
     ├── unit-converter.vue               # 万能单位换算器
+    ├── smart-size-advisor.vue           # 国际服装尺码智能对照器
     ├── spaced-repetition.vue            # 间隔重复复习计划器
     ├── utf8-byte-viewer.vue              # UTF-8 字节序列可视化查看器
     ├── world-clock.vue                   # 世界时钟与时区对比器
@@ -102,6 +103,7 @@ wildfire-station/
     ├── svg-ring-chart.vue                 # SVG 环形图生成器
     ├── meta-tag-generator.vue             # Meta 标签生成器
     ├── random-picker.vue                 # 随机抽签分组器
+    ├── random-probability-simulator.vue  # 随机数与概率模拟器
     ├── exif-viewer.vue                    # 图片 EXIF 元数据查看器
     ├── ascii-art-generator.vue            # ASCII 文字艺术生成器
     ├── word-cloud.vue                     # 词云生成器
@@ -215,6 +217,7 @@ wildfire-station/
 | 随机数据表格生成器 | `/tools/fake-data-generator` | 11种字段类型（中文姓名/手机号/邮箱/地址/公司名/日期/金额/IP地址/URL/身份证号/职业），自定义字段增删，1-100行数据生成，表格展示，导出CSV和JSON |
 | 图片拼接工具 | `/tools/image-stitcher` | 拖拽上传多图、4种布局（纵向/横向/2列/3列）、间距/圆角/背景色/质量可调、拖拽排序图片顺序、实时Canvas预览、一键导出PNG/JPG |
 | 万能单位换算器 | `/tools/unit-converter` | 7大分类（长度/重量/温度/面积/体积/速度/数据存储）100+单位、实时精确换算、快捷参考列表、温度特殊公式处理、中文显示+英文符号 |
+| 国际服装尺码智能对照器 | `/tools/smart-size-advisor` | 输入身高体重智能推荐各国标准尺码（中国/美国/欧盟/英国/日本），支持上衣/裤子/鞋子/袜子多品类，男女童全覆盖，BMI体型指标+三围估算，对照表高亮推荐行，一键复制结果 |
 | 间隔重复复习计划器 | `/tools/spaced-repetition` | 3种间隔算法（艾宾浩斯/SuperMemo 2/Cepeda优化）、Canvas遗忘曲线图+复习节点标记、多科目管理、localStorage存储、今日待复习提醒 |
 | UTF-8 字节序列可视化查看器 | `/tools/utf8-byte-viewer` | 粘贴任意文本逐字符展示Unicode码点/十进制/UTF-8十六进制字节序列/UTF-16编码/HTML实体，详细表格+紧凑视图切换，统计字符数/字节数，一键复制单行或全部JSON |
 | 世界时钟与时区对比器 | `/tools/world-clock` | 30+主要城市按洲分组，可添加/删除最多8个城市，每秒更新时间+日期+时差，24小时时间轴可视化，工作时间9-18点重叠区域高亮，最佳会议时间推荐，Intl.DateTimeFormat API |
@@ -229,6 +232,7 @@ wildfire-station/
 | SVG 环形图生成器 | `/tools/svg-ring-chart` | 三种模式（单环进度条/多环饼图/仪表盘），颜色/渐变/环宽度/大小/动画时长/起始角度可调，多段数据增删改，实时SVG预览，SVG代码输出一键复制，纯JS计算零依赖 |
 | Meta 标签生成器 | `/tools/meta-tag-generator` | 表单输入标题/描述/关键词/URL/图片等，实时预览微信/Facebook/Twitter/X/Discord 分享卡片样式，字符计数+最佳长度提示，生成完整Meta+OG+Twitter Card代码一键复制 |
 | 随机抽签分组器 | `/tools/random-picker` | Fisher-Yates洗牌+分组算法，三种模式（随机抽签/公平分组/加权随机），CSS转盘动画，自定义权重与组名，操作历史记录，纯前端无依赖 |
+| 随机数与概率模拟器 | `/tools/random-probability-simulator` | 四大模式（随机数生成/概率分布模拟/掷骰子/轮盘赌），Box-Muller正态分布+泊松分布+指数分布算法，Canvas直方图可视化，骰子动画+轮盘旋转动画，统计信息，一键复制/下载 |
 | 图片 EXIF 元数据查看器 | `/tools/exif-viewer` | 拖拽/点击上传图片，纯前端 ArrayBuffer 解析 JPEG EXIF APP1 段，IFD 标签提取（相机/镜头/光圈/快门/ISO/GPS），Canvas 缩略图预览，GPS 坐标 Google Maps 链接，复制 JSON/纯文本，原始字节十六进制/文本预览 |
 | ASCII 文字艺术生成器 | `/tools/ascii-art-generator` | 6 种 ASCII 字体模板（Banner/Shadow/Mini/Block/Slant/Big），5 种字符集（标准/方块/点阵/简洁/星号），自定义输出宽度，支持 A-Z 和 0-9，实时预览，一键复制/下载 TXT |
 | 词云生成器 | `/tools/word-cloud` | 输入文本中英文自动分词统计词频（中文单字/双字/三字组合+英文空格分词），螺旋线放置算法Canvas绘制，5种配色方案/4种背景色/最大词数可调，词频柱状图，导出PNG |
