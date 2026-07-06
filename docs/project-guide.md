@@ -148,6 +148,9 @@ wildfire-station/
     ├── permutation-combination.vue     # 排列组合计算器
     ├── css-theme-generator.vue         # CSS变量主题生成器
     └── work-hours-calculator.vue       # 工时与加班计算器
+    ├── timeline-generator.vue          # 时间线可视化生成器
+    ├── text-art-styles.vue            # 文字艺术/特殊文字生成器
+    └── xiaohongshu-editor.vue          # 小红书笔记排版助手
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -281,6 +284,9 @@ wildfire-station/
 | 排列组合计算器 | `/tools/permutation-combination` | 排列A(n,m)/组合C(n,m)/可重复排列组合，BigInt精确计算大数，杨辉三角Canvas可视化 |
 | CSS变量主题生成器 | `/tools/css-theme-generator` | 13+预设颜色变量，自定义扩展，明暗双主题切换，组件实时预览（按钮/卡片/表单/Alert），一键生成CSS代码下载 |
 | 工时与加班计算器 | `/tools/work-hours-calculator` | 上下班时间+午休，日/周/月统计，标准工时对比，加班费估算，Canvas柱状图可视化 |
+| 时间线可视化生成器 | `/tools/timeline-generator` | 输入事件列表（日期+标题+描述）自动生成垂直/水平时间线图，3种节点风格，6种主题色，快速模板，Canvas绘制，导出PNG/SVG |
+| 文字艺术生成器 | `/tools/text-art-styles` | 12种Unicode特殊文字样式（倒置/镜像/全角/小型大写/上下标/花体/双线体/删除线/下划线/上划线等）+8种装饰边框，一键复制 |
+| 小红书笔记排版助手 | `/tools/xiaohongshu-editor` | 左栏编辑右栏模拟手机端小红书卡片预览，标题+正文+话题标签，5类Emoji快捷插入，分隔线/高亮/列表格式工具，字数统计，一键复制全文 |
 
 ## GitHub Actions 部署
 
