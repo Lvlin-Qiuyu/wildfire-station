@@ -409,6 +409,12 @@ const tools = [
     path: '/tools/image-stitcher',
   },
   {
+    icon: '📏',
+    name: '国际服装尺码智能对照器',
+    desc: '输入身高体重，智能推荐各国标准尺码，支持衣裤鞋袜多品类对照',
+    path: '/tools/smart-size-advisor',
+  },
+  {
     icon: '📐',
     name: '万能单位换算器',
     desc: '7大分类100+单位，长度/重量/温度/面积/体积/速度/数据存储实时换算',
@@ -497,6 +503,12 @@ const tools = [
     name: 'Meta 标签生成器',
     desc: '生成 SEO + Open Graph + Twitter Card 标签，实时预览微信/Facebook/Twitter/Discord 分享效果',
     path: '/tools/meta-tag-generator',
+  },
+  {
+    icon: '🎲',
+    name: '随机数与概率模拟器',
+    desc: '自定义范围随机数、概率分布模拟、掷骰子/抽签/轮盘赌可视化',
+    path: '/tools/random-probability-simulator',
   },
   {
     icon: '🎰',
