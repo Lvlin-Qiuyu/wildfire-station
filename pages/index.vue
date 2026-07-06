@@ -768,6 +768,24 @@ const tools = [
     desc: '输入上下班时间和午休，自动计算日/周/月工时和加班费',
     path: '/tools/work-hours-calculator',
   },
+  {
+    icon: '📊',
+    name: '时间线可视化生成器',
+    desc: '输入事件列表自动生成垂直/水平时间线图，支持导出PNG/SVG',
+    path: '/tools/timeline-generator',
+  },
+  {
+    icon: '🔤',
+    name: '文字艺术生成器',
+    desc: '生成倒置、镜像、全角、花体、上标等12种特殊Unicode文字样式',
+    path: '/tools/text-art-styles',
+  },
+  {
+    icon: '📱',
+    name: '小红书笔记排版助手',
+    desc: '左栏编辑右栏实时预览小红书卡片效果，支持Emoji插入和标签',
+    path: '/tools/xiaohongshu-editor',
+  },
 ]
 </script>
 
