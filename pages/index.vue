@@ -744,6 +744,30 @@ const tools = [
     desc: 'TOML/INI/JSON互转，自研轻量解析器，预设示例模板，错误提示',
     path: '/tools/toml-converter',
   },
+  {
+    icon: '📐',
+    name: '几何计算器',
+    desc: '计算常见几何图形面积/周长/体积/表面积，支持Canvas可视化预览',
+    path: '/tools/geometry-calculator',
+  },
+  {
+    icon: '🔢',
+    name: '排列组合计算器',
+    desc: '排列/组合/可重复排列组合/杨辉三角，BigInt精确计算，大数支持',
+    path: '/tools/permutation-combination',
+  },
+  {
+    icon: '🎨',
+    name: 'CSS变量主题生成器',
+    desc: '定义CSS自定义属性，自动生成明暗两套主题，实时预览组件效果',
+    path: '/tools/css-theme-generator',
+  },
+  {
+    icon: '⏰',
+    name: '工时与加班计算器',
+    desc: '输入上下班时间和午休，自动计算日/周/月工时和加班费',
+    path: '/tools/work-hours-calculator',
+  },
 ]
 </script>
 
