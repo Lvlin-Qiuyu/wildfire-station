@@ -151,6 +151,8 @@ wildfire-station/
     ├── timeline-generator.vue          # 时间线可视化生成器
     ├── text-art-styles.vue            # 文字艺术/特殊文字生成器
     └── xiaohongshu-editor.vue          # 小红书笔记排版助手
+    ├── metronome.vue                    # 在线节拍训练器
+    └── encrypted-link.vue               # 加密文本分享链接生成器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -287,6 +289,8 @@ wildfire-station/
 | 时间线可视化生成器 | `/tools/timeline-generator` | 输入事件列表（日期+标题+描述）自动生成垂直/水平时间线图，3种节点风格，6种主题色，快速模板，Canvas绘制，导出PNG/SVG |
 | 文字艺术生成器 | `/tools/text-art-styles` | 12种Unicode特殊文字样式（倒置/镜像/全角/小型大写/上下标/花体/双线体/删除线/下划线/上划线等）+8种装饰边框，一键复制 |
 | 小红书笔记排版助手 | `/tools/xiaohongshu-editor` | 左栏编辑右栏模拟手机端小红书卡片预览，标题+正文+话题标签，5类Emoji快捷插入，分隔线/高亮/列表格式工具，字数统计，一键复制全文 |
+| 在线节拍训练器 | `/tools/metronome` | Web Audio API OscillatorNode精确节拍声，BPM调节30-300，4种拍号（2/4/3/4/4/4/6/8），4种音色（木鱼/电子/高音/牛铃），重拍强调音，节拍圆点可视化闪烁，TAP敲击校准BPM，键盘快捷键（Space/T/方向键） |
+| 加密文本分享链接生成器 | `/tools/encrypted-link` | Web Crypto API AES-256-GCM加密文本，PBKDF2密钥派生（100000次迭代），salt+IV+ciphertext编码为URL hash fragment生成分享链接，接收方打开链接输入密码自动解密，URL安全Base64编解码，纯前端零后端 |
 
 ## GitHub Actions 部署
 
