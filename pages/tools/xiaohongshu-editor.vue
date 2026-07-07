@@ -87,7 +87,7 @@
 
             <!-- 正文 -->
             <div class="xhs-body" v-if="parsedBody">
-              <p v-for="(para, i) in parsedBody" :key="i" :class="{ separator: para.isSeparator, highlight: para.isHighlight, list-item: para.isListItem }">
+              <p v-for="(para, i) in parsedBody" :key="i" :class="{ separator: para.isSeparator, highlight: para.isHighlight, 'list-item': para.isListItem }">
                 <span v-if="para.isSeparator" class="sep-line">- - - - - - - - - -</span>
                 <span v-else-if="para.isHighlight" class="highlight-text">✨ {{ para.text }}</span>
                 <span v-else-if="para.isListItem" class="list-text">📝 {{ para.text }}</span>
