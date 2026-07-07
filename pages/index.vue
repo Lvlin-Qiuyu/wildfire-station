@@ -571,6 +571,12 @@ const tools = [
     path: '/tools/markdown-toc',
   },
   {
+    icon: '📦',
+    name: 'Base32/Base85/Base91 编解码器',
+    desc: 'Base32/Base32hex/Base85/Base91多种编码实时双向转换，编码效率对比，自动检测解码',
+    path: '/tools/base-x-encoder',
+  },
+  {
     icon: '🔢',
     name: 'Base58/Base62 编解码器',
     desc: 'Base58/Base58Check/Base62文本互转，比特币地址验证，CTF和区块链开发常用',
@@ -787,10 +793,22 @@ const tools = [
     path: '/tools/xiaohongshu-editor',
   },
   {
+    icon: '💤',
+    name: '睡眠周期计算器',
+    desc: '基于90分钟睡眠周期，正反向计算最佳入睡/起床时间，Canvas可视化时间轴',
+    path: '/tools/sleep-cycle-calculator',
+  },
+  {
     icon: '🎵',
     name: '在线节拍训练器',
     desc: 'Web Audio API精确节拍声，BPM调节30-300，拍号选择，重拍强调，视觉闪烁同步',
     path: '/tools/metronome',
+  },
+  {
+    icon: '📊',
+    name: '数据透视表生成器',
+    desc: '粘贴CSV表格数据，选择行列字段和聚合方式，自动生成交叉汇总透视表',
+    path: '/tools/pivot-table',
   },
   {
     icon: '🔗',
