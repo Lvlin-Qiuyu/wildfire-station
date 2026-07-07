@@ -798,6 +798,24 @@ const tools = [
     desc: 'AES-GCM加密文本生成分享链接，接收方打开输入密码自动解密，零后端纯前端',
     path: '/tools/encrypted-link',
   },
+  {
+    icon: '🧹',
+    name: '文本噪声清理器',
+    desc: '检测零宽字符、控制字符、BOM头、多余空白等隐藏噪声，分类清除+差异对比',
+    path: '/tools/text-noise-cleaner',
+  },
+  {
+    icon: '🧠',
+    name: '思维导图文本生成器',
+    desc: '输入缩进大纲自动生成树状思维导图，Canvas渲染+拖拽缩放+导出PNG',
+    path: '/tools/mind-map-generator',
+  },
+  {
+    icon: '📱',
+    name: '公众号文章排版器',
+    desc: 'Markdown转微信公众号兼容内联HTML，多主题配色+手机预览+一键复制',
+    path: '/tools/wechat-formatter',
+  },
 ]
 </script>
 
