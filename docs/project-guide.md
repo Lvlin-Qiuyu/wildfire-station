@@ -156,6 +156,9 @@ wildfire-station/
     ├── text-noise-cleaner.vue           # 文本噪声清理器
     ├── mind-map-generator.vue           # 思维导图文本生成器
     └── wechat-formatter.vue             # 公众号文章排版器
+    ├── pivot-table.vue                   # 数据透视表生成器
+    ├── base-x-encoder.vue               # Base32/Base85/Base91 编解码器
+    └── sleep-cycle-calculator.vue        # 睡眠周期计算器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -297,6 +300,9 @@ wildfire-station/
 | 文本噪声清理器 | `/tools/text-noise-cleaner` | 检测零宽字符（U+200B/200C/200D/FEFF等）、BOM头、不可见控制字符、方向控制字符、同形异义字符、多余空白（连续空格/tab/空行），分类列表+勾选清除+位置详情+Unicode码点显示+差异对比+一键复制/下载 |
 | 思维导图文本生成器 | `/tools/mind-map-generator` | 输入Tab/空格缩进大纲文本，自动解析层级生成树状思维导图，Canvas渲染节点+贝塞尔连线，Reingold-Tilford简化版自上而下布局，节点展开/折叠，鼠标拖拽平移+滚轮缩放+触摸双指缩放，层级自动配色，一键导出PNG |
 | 公众号文章排版器 | `/tools/wechat-formatter` | 轻量Markdown解析器（标题/加粗/斜体/引用/列表/代码块/行内代码/链接/水平线），全部内联CSS样式生成微信兼容HTML，4种主题配色（简约/商务/清新/暖色），手机屏幕模拟预览，复制HTML代码/富文本/下载HTML文件 |
+| 数据透视表生成器 | `/tools/pivot-table` | 粘贴CSV数据自动检测分隔符（逗号/Tab），列名自动识别，行/列分组字段和值字段下拉选择，5种聚合方式（求和/计数/平均值/最大/最小），HTML透视表渲染带行列合计，导出CSV，内置示例数据 |
+| Base32/Base85/Base91 编解码器 | `/tools/base-x-encoder` | 纯JS实现Base32(RFC4648)/Base32hex/Base85(Ascii85)/Z85(ZeroMQ)/Base91(basE91)五种编码，编码/解码双模式，粘贴编码自动检测格式，编码效率对比（压缩率）可视化柱状图，字符集信息参考表 |
+| 睡眠周期计算器 | `/tools/sleep-cycle-calculator` | 正向（入睡→起床）反向（起床→入睡）双模式，90分钟周期+15分钟入睡缓冲，3-6个周期推荐并标注睡眠质量，当前时间快选按钮，Canvas睡眠周期时间轴可视化，Notification API闹钟提醒+提示音 |
 
 ## GitHub Actions 部署
 
