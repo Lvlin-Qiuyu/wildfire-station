@@ -786,6 +786,18 @@ const tools = [
     desc: '左栏编辑右栏实时预览小红书卡片效果，支持Emoji插入和标签',
     path: '/tools/xiaohongshu-editor',
   },
+  {
+    icon: '🎵',
+    name: '在线节拍训练器',
+    desc: 'Web Audio API精确节拍声，BPM调节30-300，拍号选择，重拍强调，视觉闪烁同步',
+    path: '/tools/metronome',
+  },
+  {
+    icon: '🔗',
+    name: '加密文本分享链接生成器',
+    desc: 'AES-GCM加密文本生成分享链接，接收方打开输入密码自动解密，零后端纯前端',
+    path: '/tools/encrypted-link',
+  },
 ]
 </script>
 
