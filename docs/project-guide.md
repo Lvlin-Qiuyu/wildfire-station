@@ -153,6 +153,9 @@ wildfire-station/
     └── xiaohongshu-editor.vue          # 小红书笔记排版助手
     ├── metronome.vue                    # 在线节拍训练器
     └── encrypted-link.vue               # 加密文本分享链接生成器
+    ├── text-noise-cleaner.vue           # 文本噪声清理器
+    ├── mind-map-generator.vue           # 思维导图文本生成器
+    └── wechat-formatter.vue             # 公众号文章排版器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -291,6 +294,9 @@ wildfire-station/
 | 小红书笔记排版助手 | `/tools/xiaohongshu-editor` | 左栏编辑右栏模拟手机端小红书卡片预览，标题+正文+话题标签，5类Emoji快捷插入，分隔线/高亮/列表格式工具，字数统计，一键复制全文 |
 | 在线节拍训练器 | `/tools/metronome` | Web Audio API OscillatorNode精确节拍声，BPM调节30-300，4种拍号（2/4/3/4/4/4/6/8），4种音色（木鱼/电子/高音/牛铃），重拍强调音，节拍圆点可视化闪烁，TAP敲击校准BPM，键盘快捷键（Space/T/方向键） |
 | 加密文本分享链接生成器 | `/tools/encrypted-link` | Web Crypto API AES-256-GCM加密文本，PBKDF2密钥派生（100000次迭代），salt+IV+ciphertext编码为URL hash fragment生成分享链接，接收方打开链接输入密码自动解密，URL安全Base64编解码，纯前端零后端 |
+| 文本噪声清理器 | `/tools/text-noise-cleaner` | 检测零宽字符（U+200B/200C/200D/FEFF等）、BOM头、不可见控制字符、方向控制字符、同形异义字符、多余空白（连续空格/tab/空行），分类列表+勾选清除+位置详情+Unicode码点显示+差异对比+一键复制/下载 |
+| 思维导图文本生成器 | `/tools/mind-map-generator` | 输入Tab/空格缩进大纲文本，自动解析层级生成树状思维导图，Canvas渲染节点+贝塞尔连线，Reingold-Tilford简化版自上而下布局，节点展开/折叠，鼠标拖拽平移+滚轮缩放+触摸双指缩放，层级自动配色，一键导出PNG |
+| 公众号文章排版器 | `/tools/wechat-formatter` | 轻量Markdown解析器（标题/加粗/斜体/引用/列表/代码块/行内代码/链接/水平线），全部内联CSS样式生成微信兼容HTML，4种主题配色（简约/商务/清新/暖色），手机屏幕模拟预览，复制HTML代码/富文本/下载HTML文件 |
 
 ## GitHub Actions 部署
 
