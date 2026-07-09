@@ -649,12 +649,6 @@ const tools = [
     path: '/tools/loan-amortization',
   },
   {
-    icon: '📈',
-    name: '复利计算器与投资回报分析器',
-    desc: '复利计算、定投分析、收益预测，可视化投资增长曲线，复利vs单利对比',
-    path: '/tools/compound-interest-calculator',
-  },
-  {
     icon: '📋',
     name: '代码卡片生成器',
     desc: '粘贴代码自动语法高亮，生成带行号和主题色的精美代码卡片图片，6种配色主题',
