@@ -48,6 +48,9 @@ wildfire-station/
 │       ├── md-table.vue           # Markdown 表格生成器
 │       ├── regex-tester.vue       # 正则表达式可视化测试器
 │       ├── json-diff.vue          # JSON 对比工具
+│       ├── chinese-text-beautifier.vue  # 中文文本美化器
+│       ├── css-style-generator.vue      # CSS样式生成器
+│       ├── lightweight-text-converter.vue # 轻量级文本格式转换器
 │       └── css-easing.vue         # CSS 缓动曲线生成器
 │       ├── watermark.vue          # 图片水印工具
 │       ├── json-schema.vue        # JSON Schema 生成器
@@ -159,6 +162,7 @@ wildfire-station/
     ├── pivot-table.vue                   # 数据透视表生成器
     ├── base-x-encoder.vue               # Base32/Base85/Base91 编解码器
     └── sleep-cycle-calculator.vue        # 睡眠周期计算器
+    ├── compound-interest-calculator.vue   # 复利计算器与投资回报分析器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -303,6 +307,7 @@ wildfire-station/
 | 数据透视表生成器 | `/tools/pivot-table` | 粘贴CSV数据自动检测分隔符（逗号/Tab），列名自动识别，行/列分组字段和值字段下拉选择，5种聚合方式（求和/计数/平均值/最大/最小），HTML透视表渲染带行列合计，导出CSV，内置示例数据 |
 | Base32/Base85/Base91 编解码器 | `/tools/base-x-encoder` | 纯JS实现Base32(RFC4648)/Base32hex/Base85(Ascii85)/Z85(ZeroMQ)/Base91(basE91)五种编码，编码/解码双模式，粘贴编码自动检测格式，编码效率对比（压缩率）可视化柱状图，字符集信息参考表 |
 | 睡眠周期计算器 | `/tools/sleep-cycle-calculator` | 正向（入睡→起床）反向（起床→入睡）双模式，90分钟周期+15分钟入睡缓冲，3-6个周期推荐并标注睡眠质量，当前时间快选按钮，Canvas睡眠周期时间轴可视化，Notification API闹钟提醒+提示音 |
+| 复利计算器与投资回报分析器 | `/tools/compound-interest-calculator` | 一次性投入/定期定投/复利vs单利对比三种模式，复利频次可选（年/季度/月/日），5种快捷场景，Canvas投资增长曲线、复利单利对比图、本金收益构成环形图，年度明细表，导出CSV，复制汇总 |
 
 ## GitHub Actions 部署
 
