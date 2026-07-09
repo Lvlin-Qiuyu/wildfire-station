@@ -649,6 +649,12 @@ const tools = [
     path: '/tools/loan-amortization',
   },
   {
+    icon: '📈',
+    name: '复利计算器与投资回报分析器',
+    desc: '复利计算、定投分析、收益预测，可视化投资增长曲线，复利vs单利对比',
+    path: '/tools/compound-interest-calculator',
+  },
+  {
     icon: '📋',
     name: '代码卡片生成器',
     desc: '粘贴代码自动语法高亮，生成带行号和主题色的精美代码卡片图片，6种配色主题',
@@ -833,6 +839,24 @@ const tools = [
     name: '公众号文章排版器',
     desc: 'Markdown转微信公众号兼容内联HTML，多主题配色+手机预览+一键复制',
     path: '/tools/wechat-formatter',
+  },
+  {
+    icon: '📖',
+    name: '中文文本美化器',
+    desc: '智能排版中文内容，自动处理全半角转换、段落间距、标点规范化',
+    path: '/tools/chinese-text-beautifier',
+  },
+  {
+    icon: '🎨',
+    name: 'CSS样式生成器',
+    desc: '拖拽式CSS样式编辑器，实时预览效果，一键复制CSS代码',
+    path: '/tools/css-style-generator',
+  },
+  {
+    icon: '🔄',
+    name: '轻量级文本格式转换器',
+    desc: '支持TXT、Markdown、HTML、JSON之间的格式转换和互相导出',
+    path: '/tools/lightweight-text-converter',
   },
 ]
 </script>
