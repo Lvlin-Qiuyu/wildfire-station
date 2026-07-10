@@ -163,6 +163,12 @@ wildfire-station/
     ├── base-x-encoder.vue               # Base32/Base85/Base91 编解码器
     └── sleep-cycle-calculator.vue        # 睡眠周期计算器
     ├── compound-interest-calculator.vue   # 复利计算器与投资回报分析器
+    ├── photo-frame.vue                    # 照片边框生成器
+    ├── shape-mask.vue                     # 形状遮罩裁剪工具
+    ├── biorhythm-calculator.vue            # 人体生物节律计算器
+    ├── milestone-tracker.vue               # 人生里程碑追踪器
+    ├── cooking-converter.vue              # 烘焙烹饪用量换算器
+    └── nutrition-calculator.vue            # 每日营养摄入参考计算器
 ├── layouts/
 │   └── default.vue                # 默认布局
 ├── app.vue                        # 根组件
@@ -307,7 +313,13 @@ wildfire-station/
 | 数据透视表生成器 | `/tools/pivot-table` | 粘贴CSV数据自动检测分隔符（逗号/Tab），列名自动识别，行/列分组字段和值字段下拉选择，5种聚合方式（求和/计数/平均值/最大/最小），HTML透视表渲染带行列合计，导出CSV，内置示例数据 |
 | Base32/Base85/Base91 编解码器 | `/tools/base-x-encoder` | 纯JS实现Base32(RFC4648)/Base32hex/Base85(Ascii85)/Z85(ZeroMQ)/Base91(basE91)五种编码，编码/解码双模式，粘贴编码自动检测格式，编码效率对比（压缩率）可视化柱状图，字符集信息参考表 |
 | 睡眠周期计算器 | `/tools/sleep-cycle-calculator` | 正向（入睡→起床）反向（起床→入睡）双模式，90分钟周期+15分钟入睡缓冲，3-6个周期推荐并标注睡眠质量，当前时间快选按钮，Canvas睡眠周期时间轴可视化，Notification API闹钟提醒+提示音 |
-| 复利计算器与投资回报分析器 | `/tools/compound-interest-calculator` | 一次性投入/定期定投/复利vs单利对比三种模式，复利频次可选（年/季度/月/日），5种快捷场景，Canvas投资增长曲线、复利单利对比图、本金收益构成环形图，年度明细表，导出CSV，复制汇总 |
+| 复利计算器与投资回报分析器 | `/tools/compound-interest-calculator` | 一次性投入/定期定投/复利vs单利对比三种模式，复利频次可选，Canvas投资增长曲线/对比图/环形图，年度明细表，导出CSV，复制汇总 |
+| 照片边框生成器 | `/tools/photo-frame` | 上传照片添加精美边框，多种风格预设，边框宽度/颜色/圆角/内边距可调，实时预览，导出PNG/JPG |
+| 形状遮罩裁剪工具 | `/tools/shape-mask` | 上传图片用圆形/三角形/心形/星形等形状裁剪，自定义尺寸和颜色，导出透明背景PNG |
+| 人体生物节律计算器 | `/tools/biorhythm-calculator` | 输入生日计算体力/情绪/智力三大生物节律，Canvas正弦曲线可视化30天，关键日期标注，峰值/谷值/临界日提示 |
+| 人生里程碑追踪器 | `/tools/milestone-tracker` | 记录人生重要时刻和目标进度，时间轴可视化展示，倒计时/正计时，分类管理，数据本地存储 |
+| 烘焙烹饪用量换算器 | `/tools/cooking-converter` | 25种食材密度数据，杯/克/盎司/毫升/大匙/小匙等10种单位互转，配方按人数缩放，密度参考表，一键复制结果 |
+| 每日营养摄入参考计算器 | `/tools/nutrition-calculator` | Mifflin-St Jeor公式计算BMR，5种活动系数计算TDEE，减脂/维持/增肌三档目标，三大营养素(碳水/蛋白/脂肪)推荐配比，Canvas环形饼图可视化，营养建议 |
 
 ## GitHub Actions 部署
 
