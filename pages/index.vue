@@ -847,6 +847,42 @@ const tools = [
     path: '/tools/css-style-generator',
   },
   {
+    icon: '🖼️',
+    name: '照片边框生成器',
+    desc: '上传照片添加精美边框，多种风格预设，宽度颜色圆角可调，一键导出',
+    path: '/tools/photo-frame',
+  },
+  {
+    icon: '✂️',
+    name: '形状遮罩裁剪工具',
+    desc: '上传图片用圆形/三角形/心形等形状裁剪，自定义尺寸，导出透明背景PNG',
+    path: '/tools/shape-mask',
+  },
+  {
+    icon: '📊',
+    name: '人体生物节律计算器',
+    desc: '输入生日计算体力/情绪/智力三大节律曲线，Canvas可视化预测30天',
+    path: '/tools/biorhythm-calculator',
+  },
+  {
+    icon: '🎯',
+    name: '人生里程碑追踪器',
+    desc: '记录人生重要时刻和目标进度，时间轴可视化，倒计时提醒',
+    path: '/tools/milestone-tracker',
+  },
+  {
+    icon: '🍰',
+    name: '烘焙烹饪用量换算器',
+    desc: '杯/克/盎司/毫升/大匙/小匙互转，20+种食材密度数据，配方按人数缩放',
+    path: '/tools/cooking-converter',
+  },
+  {
+    icon: '🥗',
+    name: '每日营养摄入参考计算器',
+    desc: '计算TDEE每日热量，三大营养素推荐配比，Canvas饼图可视化',
+    path: '/tools/nutrition-calculator',
+  },
+  {
     icon: '🔄',
     name: '轻量级文本格式转换器',
     desc: '支持TXT、Markdown、HTML、JSON之间的格式转换和互相导出',
