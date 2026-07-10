@@ -895,6 +895,30 @@ const tools = [
     path: '/tools/color-name-lookup',
   },
   {
+    icon: '✏️',
+    name: '中文易错字检测器',
+    desc: '内置500+组常见错别字库，粘贴文本自动检测高亮，一键替换',
+    path: '/tools/typo-checker',
+  },
+  {
+    icon: '🔒',
+    name: '数据脱敏工具',
+    desc: '自动识别手机号/身份证/银行卡等PII信息，多种脱敏策略，实时预览',
+    path: '/tools/data-masking',
+  },
+  {
+    icon: '🎵',
+    name: '音频基频检测器',
+    desc: '麦克风实时检测音高，显示音名/频率/音分偏差，用于乐器调音',
+    path: '/tools/pitch-detector',
+  },
+  {
+    icon: '🔊',
+    name: '文本转语音朗读器',
+    desc: '浏览器原生TTS语音合成，多语言多角色，可调语速音调音量',
+    path: '/tools/text-to-speech',
+  },
+  {
     icon: '🔄',
     name: '轻量级文本格式转换器',
     desc: '支持TXT、Markdown、HTML、JSON之间的格式转换和互相导出',
