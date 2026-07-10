@@ -883,6 +883,18 @@ const tools = [
     path: '/tools/nutrition-calculator',
   },
   {
+    icon: '🏯',
+    name: '中国传统色卡',
+    desc: '收录传统色彩，按色系分类浏览，搜索色名查看HEX/RGB/HSL色值',
+    path: '/tools/chinese-colors',
+  },
+  {
+    icon: '🎯',
+    name: '颜色命名查询器',
+    desc: '输入颜色值反向查找最近的CSS命名色，或搜索色名查看色值',
+    path: '/tools/color-name-lookup',
+  },
+  {
     icon: '🔄',
     name: '轻量级文本格式转换器',
     desc: '支持TXT、Markdown、HTML、JSON之间的格式转换和互相导出',
