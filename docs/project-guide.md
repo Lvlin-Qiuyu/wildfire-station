@@ -330,6 +330,7 @@ wildfire-station/
 | 盲文转换器 | `/tools/braille-converter` | 文本与盲文 Unicode（U+2800-U+28FF）互转，实时可视化 2×3 点阵显示，支持英文26字母、数字、常用标点 |
 | 像素画编辑器 | `/tools/pixel-art-editor` | Canvas 像素画绘制工具，画笔/橡皮/油漆桶填充/取色器，24色预设调色板+自定义取色，8×8到64×64画布，撤销/重做，导出原始PNG或放大PNG |
 | 方格纸生成器 | `/tools/grid-paper-generator` | 自定义方格纸生成，正方形/三角形/六边形/点阵四种网格，可调网格大小、线宽、颜色，支持坐标轴和编号，导出 SVG 和 PNG |
+| CSS clip-path 裁剪路径生成器 | `/tools/clip-path-generator` | 可视化创建CSS clip-path形状，支持多边形（拖拽控制点）/圆形/椭圆/内嵌四种类型，8种预设形状（三角/菱形/五边形/六边形/星形/箭头/十字/心形），实时预览裁剪效果，生成CSS代码 |
 
 ## GitHub Actions 部署
 
