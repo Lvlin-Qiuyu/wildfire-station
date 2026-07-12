@@ -966,6 +966,24 @@ const tools = [
     desc: '上传多个音频文件，独立调节每轨的音量、声像，实时预览混合效果，可导出 WAV',
     path: '/tools/audio-mixer',
   },
+  {
+    icon: '🔤',
+    name: '盲文转换器',
+    desc: '文本与盲文 Unicode 互转，实时可视化显示 2×3 点阵，支持英文、数字和标点',
+    path: '/tools/braille-converter',
+  },
+  {
+    icon: '🎨',
+    name: '像素画编辑器',
+    desc: 'Canvas 像素画绘制工具，支持画笔/橡皮/油漆桶，预设调色板，导出 PNG',
+    path: '/tools/pixel-art-editor',
+  },
+  {
+    icon: '📐',
+    name: '方格纸生成器',
+    desc: '自定义方格纸，正方形/三角形/六边形/点阵网格，可调大小和颜色，导出 SVG 和 PNG',
+    path: '/tools/grid-paper-generator',
+  },
 ]
 </script>
 
