@@ -924,6 +924,48 @@ const tools = [
     desc: '支持TXT、Markdown、HTML、JSON之间的格式转换和互相导出',
     path: '/tools/lightweight-text-converter',
   },
+  {
+    icon: '✏️',
+    name: '中文易错字检测器',
+    desc: '内置500+组常见易错词对照库，粘贴文本自动扫描，高亮标注错别字并显示正确写法',
+    path: '/tools/typo-checker',
+  },
+  {
+    icon: '🔒',
+    name: '数据脱敏工具',
+    desc: '内置PII正则规则库，多种脱敏策略，实时预览脱敏前后对比，支持自定义规则',
+    path: '/tools/data-masking',
+  },
+  {
+    icon: '🎵',
+    name: '音频基频检测器',
+    desc: 'Web Audio API + 自相关算法检测麦克风实时音频的基频，显示Hz值和音名，用于乐器调音',
+    path: '/tools/pitch-detector',
+  },
+  {
+    icon: '🔊',
+    name: '文本转语音朗读器',
+    desc: 'Web Speech API speechSynthesis，支持多语言多语音角色，可调节语速音调音量',
+    path: '/tools/text-to-speech',
+  },
+  {
+    icon: '🔐',
+    name: '图像隐写工具',
+    desc: '使用 LSB 隐写术在图片像素中隐藏秘密文本，也可从图片中提取隐藏信息',
+    path: '/tools/image-steganography',
+  },
+  {
+    icon: '🎨',
+    name: 'SVG 无缝图案生成器',
+    desc: '创建可平铺的 SVG 无缝图案，自定义形状、颜色、大小、旋转角度，实时预览效果',
+    path: '/tools/svg-pattern-generator',
+  },
+  {
+    icon: '🎵',
+    name: '多轨音频混合器',
+    desc: '上传多个音频文件，独立调节每轨的音量、声像，实时预览混合效果，可导出 WAV',
+    path: '/tools/audio-mixer',
+  },
 ]
 </script>
 
