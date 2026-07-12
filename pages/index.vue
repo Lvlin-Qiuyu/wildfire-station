@@ -984,6 +984,12 @@ const tools = [
     desc: '自定义方格纸，正方形/三角形/六边形/点阵网格，可调大小和颜色，导出 SVG 和 PNG',
     path: '/tools/grid-paper-generator',
   },
+  {
+    icon: '✂️',
+    name: 'CSS clip-path 裁剪路径生成器',
+    desc: '可视化创建 clip-path 形状，拖拽控制点，预设多边形/星形/箭头等，生成 polygon/circle/ellipse/inset 代码',
+    path: '/tools/clip-path-generator',
+  },
 ]
 </script>
 
