@@ -39,10 +39,10 @@
       </div>
 
       <div class="tool-grid">
-        <NuxtLink
+        <a
           v-for="t in group.items.filter((x) => x.to)"
           :key="t.id"
-          :to="t.to"
+          :href="withBase(t.to)"
           class="tool"
           :class="{ 'is-hot': t.hot }"
         >
@@ -53,7 +53,7 @@
           <h3 class="tool-name">{{ t.name }}</h3>
           <p class="tool-desc">{{ t.desc }}</p>
           <span class="tool-go">打开 →</span>
-        </NuxtLink>
+        </a>
 
         <button
           v-for="t in group.items.filter((x) => !x.to)"
@@ -84,6 +84,14 @@
 import { tools, categories, type ToolCategory } from '~/data/tools'
 
 useHead({ title: '工具 - 野火小站' })
+
+const baseURL = useRuntimeConfig().app.baseURL
+const withBase = (p?: string) => {
+  if (!p) return baseURL
+  const clean = p.replace(/^\//, '')
+  // GitHub Pages 目录式路由，统一带尾斜杠避免 301
+  return `${baseURL}${clean}${clean.endsWith('/') ? '' : '/'}`
+}
 
 const activeCat = ref<'全部' | ToolCategory>('全部')
 const toast = ref('')
