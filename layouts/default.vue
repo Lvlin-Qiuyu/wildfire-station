@@ -3,7 +3,10 @@
     <header class="nav">
       <div class="nav-inner">
         <NuxtLink to="/" class="brand" aria-label="野火小站">
-          <img v-if="!logoFailed" :src="logoSrc" alt="" class="brand-logo" @error="logoFailed = true" />
+          <picture v-if="!logoFailed">
+            <source :srcset="logoWebp" type="image/webp" />
+            <img :src="logoSrc" alt="" class="brand-logo" width="40" height="40" @error="logoFailed = true" />
+          </picture>
           <span v-else class="brand-logo brand-logo--fallback">野</span>
           <span class="brand-name">野火小站</span>
         </NuxtLink>
@@ -69,6 +72,7 @@ onMounted(init)
 const logoFailed = ref(false)
 const baseURL = useRuntimeConfig().app.baseURL
 const logoSrc = computed(() => `${baseURL}logo.png`)
+const logoWebp = computed(() => `${baseURL}logo.webp`)
 const year = new Date().getFullYear()
 </script>
 
