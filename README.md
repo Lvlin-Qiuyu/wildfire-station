@@ -1,64 +1,49 @@
-# 🔥 野火小站
+# 野火小站
 
-一个集成各类实用在线工具的站点，简洁、开源、免费。
+> 星星之火，可以燎原。
 
-**在线访问**: [wildfire-station](https://lvlin-qiuyu.github.io/wildfire-station/)
+一个纯前端在线工具箱，全部功能在浏览器本地运行，数据不上传。
 
-## 🛠 已有工具
+## 技术栈
 
-| 工具 | 说明 |
-|------|------|
-| [Base64 编解码](https://lvlin-qiuyu.github.io/wildfire-station/tools/base64) | 实时 Base64 编码与解码，支持一键复制 |
-| [二维码工具](https://lvlin-qiuyu.github.io/wildfire-station/tools/qrcode) | 文本生成二维码（可下载）、上传图片解码 |
-| [文本比对](https://lvlin-qiuyu.github.io/wildfire-station/tools/text-diff) | 对比两段文本差异，类似代码 Diff 效果 |
-| [外部收藏](https://lvlin-qiuyu.github.io/wildfire-station/tools/bookmarks) | 好用的工具、资讯站点、Skill 等资源归档 |
+- Nuxt 3（SSG 静态生成）+ Vue 3 + TypeScript
+- 无 UI 框架，手写 CSS 变量主题
+- 部署：GitHub Pages + GitHub Actions
 
-## 📦 技术栈
+## 目录结构
 
-- [Nuxt 3](https://nuxt.com/) — Vue 全栈框架，静态生成模式
-- [pnpm](https://pnpm.io/) — 包管理器
-- [GitHub Pages](https://pages.github.com/) — 部署托管
-- [GitHub Actions](https://github.com/features/actions) — 自动化构建部署
+```
+├── assets/css/main.css      # 全局样式变量与基础样式
+├── layouts/default.vue      # 全站布局：左上 logo+站名，右上菜单
+├── pages/
+│   ├── index.vue            # 工具页（默认首页）：工具箱格子 + 分类筛选
+│   ├── blog.vue             # 博客页（当前为测试数据）
+│   ├── contact.vue          # 联系我（当前为测试数据）
+│   └── tools/quote-card.vue # 语录卡片工具
+├── data/tools.ts            # 工具清单（名称/分类/描述/是否上线）
+├── lib/quote-card.ts        # Canvas 绘制语录卡片核心逻辑
+└── public/                  # 静态资源（logo.png / favicon.svg）
+```
 
-## 🚀 本地开发
+## 开发
 
 ```bash
-# 安装依赖
 pnpm install
-
-# 启动开发服务器
-pnpm dev
-
-# 构建静态站点
-pnpm generate
+pnpm dev          # http://localhost:3000/wildfire-station/
+pnpm generate     # 产物在 .output/public
 ```
 
-## 📁 项目结构
+## 添加新工具
 
-```
-wildfire-station/
-├── pages/
-│   ├── index.vue              # 首页（工具卡片导航）
-│   └── tools/
-│       ├── base64.vue         # Base64 编解码
-│       ├── qrcode.vue         # 二维码工具
-│       ├── text-diff.vue      # 文本比对
-│       └── bookmarks.vue      # 外部收藏
-├── layouts/
-│   └── default.vue            # 默认布局
-├── docs/
-│   └── project-guide.md       # 项目归档文档
-├── .github/workflows/
-│   └── deploy.yml             # GitHub Pages 自动部署
-└── nuxt.config.ts
-```
+1. 在 `pages/tools/` 新建 `xxx.vue`
+2. 在 `data/tools.ts` 里把对应条目的 `to` 指到 `/tools/xxx`，并去掉 `coming: true`
+3. 在 `pages/index.vue` 无需改动（自动从 `data/tools.ts` 渲染）
 
-## 📝 添加新工具
+## Logo
 
-1. 在 `pages/tools/` 下新建 `.vue` 文件
-2. 在 `pages/index.vue` 中添加对应工具卡片
-3. 提交到 `main` 分支，GitHub Actions 自动部署
+把 logo 图片放到 `public/logo.png` 即会自动生效（圆形框内完整展示，不裁剪）；没有时会显示「野」字占位。
 
-## 📄 License
+## 部署
 
-[MIT](LICENSE)
+推送到 `main` 分支，GitHub Actions 自动构建并发布到 GitHub Pages。
+线上地址：https://lvlin-qiuyu.github.io/wildfire-station/
