@@ -39,24 +39,36 @@
       </div>
 
       <div class="tool-grid">
-        <component
-          :is="t.to ? 'NuxtLink' : 'button'"
-          v-for="t in group.items"
+        <NuxtLink
+          v-for="t in group.items.filter((x) => x.to)"
           :key="t.id"
           :to="t.to"
           class="tool"
-          :class="{ 'is-coming': t.coming, 'is-hot': t.hot }"
-          @click="t.coming && openSoon(t)"
+          :class="{ 'is-hot': t.hot }"
         >
           <div class="tool-top">
             <span class="tool-icon">{{ t.icon }}</span>
             <span v-if="t.hot" class="badge badge-hot">NEW</span>
-            <span v-else-if="t.coming" class="badge">规划中</span>
           </div>
           <h3 class="tool-name">{{ t.name }}</h3>
           <p class="tool-desc">{{ t.desc }}</p>
-          <span class="tool-go" :class="{ off: t.coming }">{{ t.coming ? '敬请期待' : '打开 →' }}</span>
-        </component>
+          <span class="tool-go">打开 →</span>
+        </NuxtLink>
+
+        <button
+          v-for="t in group.items.filter((x) => !x.to)"
+          :key="t.id"
+          class="tool is-coming"
+          @click="openSoon(t)"
+        >
+          <div class="tool-top">
+            <span class="tool-icon">{{ t.icon }}</span>
+            <span class="badge">规划中</span>
+          </div>
+          <h3 class="tool-name">{{ t.name }}</h3>
+          <p class="tool-desc">{{ t.desc }}</p>
+          <span class="tool-go off">敬请期待</span>
+        </button>
       </div>
     </section>
 
